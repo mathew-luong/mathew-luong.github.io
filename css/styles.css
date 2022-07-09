@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    color: #fff;
+    background: #1F1F23;
+    /* background-image: url('/img/backgroundDark.jpg'); */
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation ------------------------------------------------------------------------ */
+/* Animation modified from: https://alvarotrigo.com/blog/css-text-animations/ */
+
+.loadingContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    display: block;
+    font: 5rem 'Hind';
+    margin: 0 auto;
+    width: 960px;
+    height: 300px;
+}
+
+.text-anim {
+    fill: none;
+    stroke: rgb(71, 167, 230);
+    stroke-dasharray: 30% 5%;
+    stroke-width: 2px;
+    stroke-dashoffset: 5%;
+    animation: loading-outline 7s 1 linear; /* Animation duration is 7s, 1 repetition and moves linearly */
+}
+
+@keyframes loading-outline {
+    100% {
+        stroke-dashoffset: 35%;
+    }
+}
+
+
+/* Header Section ------------------------------------------------------------------------ */
+
+.headContainer {
+    width: 95%;
+    padding: 16px;
+    margin: 0 auto;
+    height: 10vh;
+    /* background-color: #01B7FF; */
+}
+
+
+.fa-sun {
+    color: rgb(244, 230, 75);
+    font-size: 2rem;
+}
+
+.fa-moon {
+    color:#27272b;
+    font-size: 2rem;
+    visibility: hidden;
+    display: none;
+}
+
+.headerName {
+    display: inline;
+}
+
+.darkModeBtn {
+    all: unset;
+    float: right;
+}
+
+.darkModeBtn:hover {
+    cursor: pointer;
+}
+
+.darkModeBtn:active #lightmodeicon {
+    color:rgb(178, 168, 53);
+}
+
+.darkModeBtn:active #darkmodeicon {
+    color: rgb(118, 118, 118);
+}
+
+/* About Section ------------------------------------------------------------------------ */
+
+.aboutSection {
+    display: flex;
+    /* background-color: aqua; */
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    height: 90vh;  
+    padding: 0 0 10vh 0;
+    align-items: center;
+}
+
+#aboutParagraph {
+    color:#b3b3b3;
+}
+
+.aboutImg {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 325px;
+    width: 325px;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #73d041; */
+    width: 40%;
+}
+
+.aboutContent > * {
+    padding-bottom: 2.5rem;
+}
+
+.blueText {
+    color: #01B7FF;
+}
+
+.icons {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.5s;
+    transition: transform 0.2s ease-in;
+}
+
+.iconsAnchor:hover .icons {
+    color: #01B7FF;
+    transform: translateY(-3px);
+}
+
+.iconsAnchor:active .icons {
+    color: #0179a9;
+}
+
+.icLight {
+    color: #27272b;
+    font-size: 1.5rem;
+    transition: color 0.5s;
+    transition: transform 0.2s ease-in;
+}
+
+.iconsAnchor:hover .icLight {
+    color: #01B7FF;
+    transform: translateY(-3px);
+}
+
+.iconsAnchor:active .icLight {
+    color: #0179a9;
+}
+
+
+.workBtn {
+    background-color: #01B7FF;
+    border-radius: 35px;
+    padding: 0.25em 0.5em;
+    color:#fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-in;
+}
+
+.workBtn:active {
+    background-color: #0179a9;
+}
+
+.workBtn:hover {
+    transform: translateY(-3px);
+}
+
+.aboutButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+
+/* Projects Section ------------------------------------------------------------------------ */
+
+
+.projectSection {
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    padding: 4rem 0 0 0;
+}
+
+
+.upButton {
+    background-color: #01B7FF;
+    border-radius: 50%;
+    font-size: 5vmin;
+    padding: 5px;
+    object-fit: cover;
+    width:8vmin;
+    height:8vmin;
+    bottom: 32px;
+    right: 32px;
+    position: fixed;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.upButton:active {
+    background-color: #0179a9;
+}
+
+.upButton:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.upButton:hover i {
+    opacity: 1;
+}
+
+.upButton i {
+    color: #fff;
+    transition: 0.25s;
+    opacity: 0.8;
+}
+
+.carousel {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 10px;
+    overflow: auto;
+    display: flex;
+    /* background-color: #fff; */
+    height: 75%;
+}
+
+.projectCards {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    background-color: #27272b;
+    color: #9a9a9a;
+    border-radius: 10px;
+    margin: 2rem 1rem 1rem 1rem;
+    height: 90%;
+    width: 85%;
+    display: flex;
+    /* overflow:hidden; */
+}
+
+.projectCards img {
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* object-fit: cover; */
+    /* transition: all .3s ease-in-out; */
+}
+
+/* .projectCards img:hover {
+    transform: scale(1.05);
+} */
+
+.projectContent {
+    padding: 16px 32px 32px 32px;
+    position: relative;
+}
+
+.projectLink {
+    position:absolute;
+    bottom: 32px;
+    right: 32px;
+}
+
+.projectLang {
+    font-weight:300;
+    font-size: 0.75rem;
+    color:#01B7FF;
+}
+
+.projectName {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    color:#ffffff;
+}
+
+.carouselDots {
+    /* background-color: #fff; */
+    width: 90%;
+    height: 5%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #01B7FF;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 2px 5px;
+}
+
+.current, .dot:hover {
+    background-color: #025a7d;
+}
+
+/* Mobile Screens ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 376px) {
+    .aboutImg {
+        height: 250px;
+        width: 250px;
+    }
+    .aboutSection {
+        margin-bottom: 2rem;
+        padding: 10vh 0 0 0;
+        height: 80vh;
+    }
+    .aboutSection h1 {
+        padding-bottom: 1rem;
+    }
+    #aboutParagraph {
+        padding-bottom: 1rem;
+    }
+    .headContainer {
+        height: 5vh;
+    }
+    .fa-moon {
+        font-size: 1.5rem;
+    }
+    .fa-sun {
+        font-size: 1.5rem;
+    }
+    .projectSection {
+        width: 90%;
+        padding: 2rem 0 0 0;
+        margin-top: 20vh;
+    }
+    .projectCards {
+        height: 150%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutSection {
+        flex-direction: column;
+        width: 85%;
+        align-items: center; /* align children centered horizontally */
+        margin: 2vh auto;
+    }
+    .aboutImg {
+        margin-top: 5vh;
+        margin-bottom: 1rem;
+    }
+    .aboutContent {
+        width: 100%;
+        
+    }
+    .aboutContent > * {
+        padding-bottom: 2rem;
+    }
+    .upButton {
+        display: none;
+    }
+
+    /* Project Section ------------------------------------------------------------------------ */
+
+    .projectSection {
+        width: 90%;
+        padding: 1rem 0 0 0;
+    }
+
+
+    .carousel {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0;
+        overflow: auto;
+        display: flex;
+        /* background-color: aliceblue; */
+        height: 85%;
+    }
+
+    .projectCards {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        border-radius: 5px;
+        /* background-color: #0179a9; */
+        margin: 2rem 1rem 0 1rem;
+        height: 90%;
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .projectCards img {
+        height: 50%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .projectContent {
+        padding: 16px 16px 16px 16px;
+        position: relative;
+        height: 50%;
+    }
+
+    .projectLink {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .projectLang {
+        font-weight:300;
+        font-size: 0.75rem;
+        color:#01B7FF;
+    }
+
+    .projectName {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .projectCards img {
+        width: 60%;
+    }
+}

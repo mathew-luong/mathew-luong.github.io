@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="/img/webIcon.ico">
+
+        <!-- GoogleFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/8468688554.js" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Mathew Luong</title>
+    </head>
+
+    <body id="top">
+        <header>
+            <div class="headContainer">
+                <!-- <img src="img/.jpg" alt="mathewLuong."> -->
+                <p class="headerName">mathewLuong.</p>
+                <button class="darkModeBtn" title="Toggle Darkmode" onclick=handleToggleDarkmode()>
+                    <i class="fa-solid fa-moon" id="darkmodeicon"></i>
+                    <i class="fa-solid fa-sun" id="lightmodeicon"></i>
+                </button>
+            </div>
+        </header>
+        <!-- Introduction -->
+        <div class="aboutSection">
+            <div>
+                <img src="img/aboutImage.jpg" alt="About Picture" class="aboutImg">
+            </div>
+            <div class="aboutContent">
+                <h1>Hello my name is,<br>
+                    <span class="blueText">Mathew Luong.</span>
+                </h1>
+                <p id="aboutParagraph">
+                    I am currently a third year Computer Science major at the University of Calgary.
+                    I am currently a third year Computer Science major at the University of Calgary.
+                    I am currently a third year Computer Science major at the University of Calgary.
+                </p>
+                <div class="aboutButtons">
+                    <!-- <a href="#projects" class="workBtn">Check out My Work</a> -->
+                    <a href="" class="workBtn" target="_blank">View my Resume</a>
+                    <a href="https://linkedin.com/" aria-label="linkedin" title="LinkedIn" class="iconsAnchor"><i class="fa-brands fa-linkedin-in icons"></i></a>
+                    <a href="https://github.com/" aria-label="github" title="GitHub" class="iconsAnchor"><i class="fa-brands fa-github icons"></i></a>
+                    <a href="mailto:mathewflames@gmail.com" aria-label="email" title="Email" class="iconsAnchor"><i class="fa-solid fa-envelope icons"></i></a>
+                    <!-- <a href="" title="Resume"><i class="fa-solid fa-file icons"></i></a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projectSection" id="projects">
+            <h1>Some of My Work</h1>
+            <div class="carousel" id="carousel">
+                <div class="projectCards"  data-cardNum="1">
+                    <img src="/img/temp.jpg">
+                    <div class="projectContent">
+                        <span class="projectLang">PYTHON JAVASCRIPT SOCKETIO</span>
+                        <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                        <h2 class="projectName">ChatApp</h2>
+                        <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application.</p>
+                    </div>
+                </div>
+                <div class="projectCards"  data-cardNum="2">
+                    <img src="/img/temp.jpg">
+                    <div class="projectContent">
+                        <span class="projectLang">PYTHON MYSQL</span>
+                        <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                        <h2 class="projectName">App2</h2>
+                        <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application.</p>
+                    </div>
+                </div>
+                <div class="projectCards"  data-cardNum="3">
+                    <img src="/img/temp.jpg">
+                    <div class="projectContent">
+                        <span class="projectLang">JAVA SOCKETIO HASKELL</span>
+                        <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                        <h2 class="projectName">Trackr+</h2>
+                        <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application. ChatApp is a real-time fully functional chatting application. ChatApp is a real-time fully functional chatting application.</p>
+                    </div>
+                </div>
+                <div class="projectCards"  data-cardNum="4">
+                    <img src="/img/temp.jpg">
+                    <div class="projectContent">
+                        <span class="projectLang">PYTHON MYSQL</span>
+                        <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                        <h2 class="projectName">App2</h2>
+                        <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carouselDots">
+                <span class="dot" data-dotNum="1" onclick=handleCarouselClick(1)></span>
+                <span class="dot"  data-dotNum="2" onclick=handleCarouselClick(2)></span>
+                <span class="dot"  data-dotNum="3" onclick=handleCarouselClick(3)></span>
+                <span class="dot"  data-dotNum="4" onclick=handleCarouselClick(4)></span>
+
+            </div>
+        </div>
+        <a class="upButton" id="scrollBtn" onclick=handleScrollBtn()><i class="fa-solid fa-arrow-down" id="scrollIcon"></i></a>
+        <div class="loadingContainer" id="loadingContainer">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%">mL </text>
+                </symbol>
+                <g class="g-ants">
+                  <use xlink:href="#s-text" class="text-anim"></use>
+                  <!-- <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use> -->
+                </g>
+              </svg>
+        </div>
+        <script>
+            $(window).on("load",function() {
+                $(".loadingContainer").fadeOut(2000);
+            });
+        </script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

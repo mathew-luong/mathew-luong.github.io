@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/main.css" rel="stylesheet" />
+
+        <!-- defines css styles -->
+        <style></style>
+
+        <!-- executes javascript, put code directly in here-->
+        <script></script>
+
+        <!-- imports javascript, runs code from file.js-->
+        <script src="js/file.js"></script>
+    </head>
+
+    <body class="dark">
+        <!-- provides a generic container for various purposes, block level element meaning it is the width of the screen, and has top/bottom margins-->
+        <div>brian</div>
+
+        <!-- title heading -->
+        <h3>chase page</h3>
+
+        <!-- provides a container for text blocks, paragraph-->
+        <p></p>
+
+        <!-- inserts a line break -->
+        <br />
+
+        <!-- wraps inline elements for styling e.g. you want just a few words to be bold, you wrap those words in a span tag-->
+        <span>this is chase</span>
+        <br />
+
+        <!-- shows an image -->
+        <img src="/chase.png" />
+        <br />
+
+        <!-- anchor tag, makes a hyperlink(button) -->
+        <a href="https://emkc.org">go to emkc.org</a>
+        <!-- opens up the link in a new tab -->
+        <a href="https://emkc.org" target="_blank">go to emkc.org</a>
+        <br />
+
+        <!-- 
+            makes a table for data, 
+            has a thead and tbody
+            inside the thead there are tr tags, standing for table rows
+            inside the tr tags, there are th tags, for table headers
+            inside the tbody, the td tags are for table data
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th>pet name</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- one row, with chase in the first column, 3 in the second column -->
+                    <td>chase</td>
+                    <td>3</td>
+                </tr> <!-- end of first row, add another tr with td tags for another row -->
+            </tbody>
+        </table>
+
+        <!-- (preformatted tag) shows literal text, i.e. the indent will appear, or e.g. l o l will appear with the spaces
+             doesnt wrap when lots of text, e.g. if long line of text it wont create a new line just keep going unlike a div
+        -->
+        <pre>
+            indented?
+        </pre>
+
+        <!-- ul, unordered list represents a list of items -->
+        <ul>
+            <li>
+                <!-- li, list item  -->
+            </li>
+        </ul>
+
+        <!-- defines a form for user input -->
+        <form action="/somewhere" method="post">
+            <!-- creates a simple single line input -->
+            <div>
+                what is your name?
+                <input type="text" />
+            </div>
+
+            <!-- creates a radio selection style input -->
+            <div>
+                are you male or female?
+                <input type="radio" name="gender" /> male
+                <input type="radio" name="gender" /> female
+            </div>
+
+            <!-- creates a dropdown style input -->
+            <div>
+                favorite dog
+                <select>
+                    <option value=""></option>
+                    <option value="chase">chase</option>
+                </select>
+            </div>
+
+            <!-- creates a multiline input -->
+            <div>
+                send chase a nice message
+                <br />
+                <textarea></textarea>
+            </div>
+
+            <!-- creates a checkbox type input -->
+            <div>
+                check to confirm you love chase
+                <input type="checkbox" />
+            </div>
+
+            <button type="submit">send data</button>
+        </form>
+    </body>
+</html>
+
+
+<!-- 
+
+
+class tag:
+    - when you want to consistently style multiple items
+    - used when more than one element shares the same style e.g. div of comments
+    - an element can have more than one class associated to it
+    - a class is a type of item
+
+id tag:
+    - when a single element will have that style, used to identify particular element in css/js
+    - an element can have only one id
+    - id should be unique
+    - an id is the unique name of an item
+
+name tag:
+    - used for sending data in a form e.g. <input> <form>
+    - 
+
+-->

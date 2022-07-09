@@ -1,0 +1,56 @@
+
+/* looks for classes with the name dark */
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.title {
+    color: #c1ffad;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.description {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+ /* all block content has content in the center, 
+    surrounded by padding(happens within the element), 
+    surrounded by a border, 
+    surrounded by a margin(happens outside of element) */
+.wrapper {
+    display: inline-block;
+    background: #21371a;
+    border-left: #fff 1px solid;
+    padding: 20px;
+    margin: 20px;
+}
+
+.chase {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* 
+To align children within flexbox, set the following to the parent:
+
+1- justify-content to align children along the main/primary axis i.e. vertical axis if parent has flex-direction: column and horizontal axis if parent has flex-direction: row.
+
+2- align-items to align children along the cross/secondary axis i.e. horizontal axis if parent has flex-direction: column and vertical axis if parent has flex-direction: row. */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center; /* align children centered vertically */ 
+    align-items: center; /* align children centered horizontally */
+}
