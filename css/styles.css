@@ -89,6 +89,7 @@ svg {
 .darkModeBtn {
     all: unset;
     float: right;
+    z-index: 100;
 }
 
 .darkModeBtn:hover {
