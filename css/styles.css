@@ -90,6 +90,7 @@ svg {
     all: unset;
     float: right;
     z-index: 100;
+    background-color: #01B7FF;
 }
 
 .darkModeBtn:hover {
@@ -278,10 +279,6 @@ svg {
     /* transition: all .3s ease-in-out; */
 }
 
-/* .projectCards img:hover {
-    transform: scale(1.05);
-} */
-
 .projectContent {
     padding: 16px 32px 32px 32px;
     position: relative;
@@ -348,12 +345,12 @@ svg {
     .headContainer {
         height: 5vh;
     }
-    .fa-moon {
+    /* .fa-moon {
         font-size: 1.5rem;
     }
     .fa-sun {
         font-size: 1.5rem;
-    }
+    } */
     .projectSection {
         width: 90%;
         padding: 2rem 0 0 0;
