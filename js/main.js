@@ -14,6 +14,11 @@ const carouselDots = document.querySelectorAll(".dot");
 const carousel = document.getElementById("carousel");
 
 
+$(window).on("load",function() {
+    $(".loadingContainer").fadeOut(2000);
+});
+
+
 // Darkmode is default
 var isDarkmode = true;
 
