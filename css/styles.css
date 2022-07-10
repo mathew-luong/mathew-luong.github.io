@@ -72,12 +72,12 @@ svg {
 
 .fa-sun {
     color: rgb(244, 230, 75);
-    font-size: 2rem;
+    font-size: 5vh;
 }
 
 .fa-moon {
     color:#27272b;
-    font-size: 2rem;
+    font-size: 5vh;
     visibility: hidden;
     display: none;
 }

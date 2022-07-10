@@ -16,17 +16,20 @@ const carousel = document.getElementById("carousel");
 
 $(window).on("load",function() {
     $(".loadingContainer").fadeOut(2000);
+    window.scrollTo(0, 0);
 });
 
 
 // Darkmode is default
 var isDarkmode = true;
+var height = window.innerHeight/2;
+
 
 window.addEventListener("scroll", () => {
-    if(this.scrollY >= 50) {
+    if(this.scrollY >= height) {
         scrollIcon.style.transform = "rotate(180deg)";
     }
-    else if (this.scrollY >= 0 && this.scrollY <= 50) {
+    else if (this.scrollY >= 0 && this.scrollY <= height) {
         scrollIcon.style.transform = "rotate(360deg)";
     }
 });
@@ -34,11 +37,11 @@ window.addEventListener("scroll", () => {
 
 function handleScrollBtn() {
     // scroll to top of webpage
-    if(this.scrollY >= 50) {
+    if(this.scrollY >= height) {
         topSection.scrollIntoView();
     }
     // scroll to projects section
-    else if (this.scrollY >= 0 && this.scrollY <= 50) {
+    else if (this.scrollY >= 0 && this.scrollY <= height) {
         projects.scrollIntoView();
     }
 }
@@ -48,7 +51,7 @@ function handleToggleDarkmode() {
     if(isDarkmode) {
         isDarkmode = !isDarkmode;
         toggleIcon(darkmodeIcon,lightmodeIcon);
-        toggleColor("#edecec","#27272b","#474747","#fff","#66666b");
+        toggleColor("#fff","#27272b","#474747","#E5E5E5","#66666b");
         
     }
     // Change to darkmode
