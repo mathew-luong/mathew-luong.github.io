@@ -5,6 +5,7 @@ const projects = document.getElementById("projects");
 const aboutPara = document.getElementById("aboutParagraph");
 const darkmodeIcon = document.getElementById("darkmodeicon");
 const lightmodeIcon = document.getElementById("lightmodeicon");
+const darkmodeBtn = document.getElementById("darkmodeBtn");
 const body = document.body;
 const icons = document.querySelectorAll(".icons");
 const cards = document.querySelectorAll(".projectCards");
@@ -33,6 +34,24 @@ window.addEventListener("scroll", () => {
         scrollIcon.style.transform = "rotate(360deg)";
     }
 });
+
+darkmodeBtn.addEventListener('click', () => {
+    console.log("NEW BUTTON");
+    // Change to lightmode
+    if(isDarkmode) {
+        isDarkmode = !isDarkmode;
+        toggleIcon(darkmodeIcon,lightmodeIcon);
+        toggleColor("#fff","#27272b","#474747","#E5E5E5","#66666b");
+        
+    }
+    // Change to darkmode
+    else {
+        isDarkmode = !isDarkmode;
+        toggleIcon(lightmodeIcon,darkmodeIcon);
+        toggleColor("#1F1F23","#fff","#b3b3b3","#151518","#9a9a9a");
+
+    }
+})
 
 
 function handleScrollBtn() {
