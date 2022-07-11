@@ -263,7 +263,7 @@ svg {
 .projectCards {
     scroll-snap-align: center;
     flex-shrink: 0;
-    background-color: #27272b;
+    background-color: #151518;
     color: #9a9a9a;
     border-radius: 10px;
     margin: 2rem 1rem 1rem 1rem;
