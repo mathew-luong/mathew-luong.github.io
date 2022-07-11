@@ -40,14 +40,14 @@ darkmodeBtn.addEventListener('click', () => {
     // Change to lightmode
     if(isDarkmode) {
         isDarkmode = !isDarkmode;
-        // toggleIcon(darkmodeIcon,lightmodeIcon);
+        toggleIcon(darkmodeIcon,lightmodeIcon);
         toggleColor("#fff","#27272b","#474747","#E5E5E5","#66666b");
         
     }
     // Change to darkmode
     else {
         isDarkmode = !isDarkmode;
-        // toggleIcon(lightmodeIcon,darkmodeIcon);
+        toggleIcon(lightmodeIcon,darkmodeIcon);
         toggleColor("#1F1F23","#fff","#b3b3b3","#151518","#9a9a9a");
 
     }

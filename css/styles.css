@@ -89,11 +89,7 @@ svg {
 .darkModeBtn {
     all: unset;
     float: right;
-    z-index: 100;
-    background-color: #ff3801;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 5px;
+    z-index: 999;
 }
 
 .darkModeBtn > * {
@@ -134,6 +130,8 @@ svg {
     border-radius: 50%;
     height: 325px;
     width: 325px;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .aboutContent {
@@ -337,10 +335,11 @@ svg {
     .aboutImg {
         height: 250px;
         width: 250px;
+        margin: 0;
+        z-index: 1;
     }
     .aboutSection {
         margin-bottom: 2rem;
-        padding: 10vh 0 0 0;
         height: 80vh;
     }
     .aboutSection h1 {
@@ -349,15 +348,13 @@ svg {
     #aboutParagraph {
         padding-bottom: 1rem;
     }
+    .aboutContent {
+        height: 60%;
+    }
     .headContainer {
         height: 5vh;
+        z-index: 100;
     }
-    /* .fa-moon {
-        font-size: 1.5rem;
-    }
-    .fa-sun {
-        font-size: 1.5rem;
-    } */
     .projectSection {
         width: 90%;
         padding: 2rem 0 0 0;
@@ -370,19 +367,26 @@ svg {
 }
 
 @media only screen and (max-width: 768px) {
+    .headContainer {
+        z-index: 100;
+    }
     .aboutSection {
         flex-direction: column;
         width: 85%;
         align-items: center; /* align children centered horizontally */
-        margin: 2vh auto;
+        margin: 0 auto;
+        height: 90vh;
+        padding: 0;
     }
     .aboutImg {
-        margin-top: 5vh;
-        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        object-fit: cover;
+        border-radius: 50%;
     }
     .aboutContent {
         width: 100%;
-        
+        height: 60%;
     }
     .aboutContent > * {
         padding-bottom: 2rem;
