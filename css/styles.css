@@ -91,6 +91,8 @@ svg {
     float: right;
     z-index: 100;
     background-color: #ff3801;
+    width: 2rem;
+    height: 2rem;
 }
 
 .darkModeBtn > * {
