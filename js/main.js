@@ -41,7 +41,7 @@ darkmodeBtn.addEventListener('click', () => {
     if(isDarkmode) {
         isDarkmode = !isDarkmode;
         toggleIcon(darkmodeIcon,lightmodeIcon);
-        toggleColor("#fff","#27272b","#474747","#e9eded","#66666b");
+        toggleColor("#fff","#27272b","#474747","#F0F1F7","#66666b");
         
     }
     // Change to darkmode
