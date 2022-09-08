@@ -26,8 +26,19 @@
                 <p class="headerName">mathewLuong.</p>
                 <!-- <a class="darkModeBtn" title="Toggle Darkmode" onclick=handleToggleDarkmode()> -->
                 <a class="darkModeBtn" title="Toggle Darkmode" id="darkmodeBtn">
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="lightmodeicon" class="sunIcon">
+                        <ellipse cx="2.49999" cy="2.50566" rx="0.983146" ry="0.963669" fill="#F4E64B"/>
+                        <rect x="2.30334" width="0.5" height="1.2" rx="0.196629" fill="#F4E64B"/>
+                        <rect x="3.82019" y="2.69824" width="0.5" height="1.2" rx="0.192734" transform="rotate(-90 3.82019 2.69824)" fill="#F4E64B"/>
+                        <rect y="2.69824" width="0.5" height="1.2" rx="0.192734" transform="rotate(-90 0 2.69824)" fill="#F4E64B"/>
+                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(0.714145 0.699997 -0.714145 0.699997 4.31738 0.605957)" fill="#F4E64B"/>
+                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(-0.714145 0.699997 0.714145 0.699997 0.671387 0.605957)" fill="#F4E64B"/>
+                        <rect width="0.5" height="1.2" rx="0.196629" transform="matrix(1 0 0 -1 2.30334 5)" fill="#F4E64B"/>
+                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(0.714145 -0.699997 -0.714145 -0.699997 4.31738 4.39404)" fill="#F4E64B"/>
+                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(-0.714145 -0.699997 0.714145 -0.699997 0.671387 4.39404)" fill="#F4E64B"/>
+                    </svg>
                     <i class="fa-solid fa-moon" id="darkmodeicon"></i>
-                    <i class="fa-solid fa-sun" id="lightmodeicon"></i>
+                    <!-- <i class="fa-solid fa-sun" id="lightmodeicon"></i> -->
                 </a>
             </div>
         </header>
@@ -41,16 +52,21 @@
                     <span class="blueText">Mathew Luong.</span>
                 </h1>
                 <p id="aboutParagraph">
-                    I am currently a third year Computer Science major at the University of Calgary.
-                    I am currently a third year Computer Science major at the University of Calgary.
-                    I am currently a third year Computer Science major at the University of Calgary.
+                    I am currently in my final semester as a Computer Science major at the University
+                    of Calgary. I am passionate about front end development and creating intuitive user
+                    experiences. You can check out some of my work below.
                 </p>
+                <!-- <p id="aboutParagraph">
+                    I am currently a third year Computer Science major at the University of Calgary.
+                    I am currently a third year Computer Science major at the University of Calgary.
+                    I am currently a third year Computer Science major at the University of Calgary.
+                </p> -->
                 <div class="aboutButtons">
                     <!-- <a href="#projects" class="workBtn">Check out My Work</a> -->
                     <a href="" class="workBtn" target="_blank">View my Resume</a>
-                    <a href="https://linkedin.com/" aria-label="linkedin" title="LinkedIn" class="iconsAnchor"><i class="fa-brands fa-linkedin-in icons"></i></a>
-                    <a href="https://github.com/" aria-label="github" title="GitHub" class="iconsAnchor"><i class="fa-brands fa-github icons"></i></a>
-                    <a href="mailto:mathewflames@gmail.com" aria-label="email" title="Email" class="iconsAnchor"><i class="fa-solid fa-envelope icons"></i></a>
+                    <a href="https://linkedin.com/" target=”_blank” aria-label="linkedin" title="LinkedIn" class="iconsAnchor"><i class="fa-brands fa-linkedin-in icons"></i></a>
+                    <a href="https://github.com/mathew-luong" target=”_blank” aria-label="github" title="GitHub" class="iconsAnchor"><i class="fa-brands fa-github icons"></i></a>
+                    <a href="mailto:mathewluong7@gmail.com" aria-label="email" title="Email" class="iconsAnchor"><i class="fa-solid fa-envelope icons"></i></a>
                     <!-- <a href="" title="Resume"><i class="fa-solid fa-file icons"></i></a> -->
                 </div>
             </div>
@@ -60,25 +76,25 @@
         <div class="projectSection" id="projects">
             <h1>Some of My Work</h1>
             <div class="carousel" id="carousel">
-                <div class="projectCards"  data-cardNum="1">
+                <div class="projectCards"  data-cardNum="1" onclick=handleCardClick(1)>
                     <img src="img/temp.jpg">
                     <div class="projectContent">
-                        <span class="projectLang">PYTHON JAVASCRIPT SOCKETIO</span>
+                        <span class="projectLang">JAVASCRIPT • SOCKETIO</span>
                         <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
                         <h2 class="projectName">ChatApp</h2>
                         <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application.</p>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="2">
+                <div class="projectCards"  data-cardNum="2" onclick=handleCardClick(2)>
                     <img src="img/temp.jpg">
                     <div class="projectContent">
-                        <span class="projectLang">PYTHON MYSQL</span>
+                        <span class="projectLang">REACT NATIVE • JAVASCRIPT</span>
                         <a href="https://github.com/" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
-                        <h2 class="projectName">App2</h2>
+                        <h2 class="projectName">Tasker</h2>
                         <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application.</p>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="3">
+                <div class="projectCards"  data-cardNum="3" onclick=handleCardClick(3)>
                     <img src="img/temp.jpg">
                     <div class="projectContent">
                         <span class="projectLang">JAVA SOCKETIO HASKELL</span>
@@ -87,7 +103,7 @@
                         <p class="projectDesc">Built in pure HTML and CSS. ChatApp is a real-time fully functional chatting application. ChatApp is a real-time fully functional chatting application. ChatApp is a real-time fully functional chatting application.</p>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="4">
+                <div class="projectCards"  data-cardNum="4" onclick=handleCardClick(4)>
                     <img src="img/temp.jpg">
                     <div class="projectContent">
                         <span class="projectLang">PYTHON MYSQL</span>

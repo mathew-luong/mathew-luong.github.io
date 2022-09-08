@@ -36,7 +36,6 @@ window.addEventListener("scroll", () => {
 });
 
 darkmodeBtn.addEventListener('click', () => {
-    console.log("NEW BUTTON");
     // Change to lightmode
     if(isDarkmode) {
         isDarkmode = !isDarkmode;
@@ -113,6 +112,13 @@ function toggleColor(bodyColor, color, paragraphColor,cardColor,cardDescColor) {
         }
     }
 }
+
+
+// Scrolls to the card that is clicked 
+function handleCardClick(cardNum) {
+    cards[cardNum-1].scrollIntoView({behavior: "smooth"});
+}
+
 
 // Initially the first card is active
 handleCarouselClick(1);
