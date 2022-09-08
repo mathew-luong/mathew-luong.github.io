@@ -35,7 +35,7 @@ html {
     align-items: center;
 }
 
-svg {
+.loadingSvg {
     display: block;
     font: 5rem 'Hind';
     margin: 0 auto;
