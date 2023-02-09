@@ -16,8 +16,8 @@ const carousel = document.getElementById("carousel");
 
 
 $(window).on("load",function() {
-    $(".loadingContainer").fadeOut(2000);
     window.scrollTo(0, 0);
+    $(".loadingContainer").fadeOut(2000);
 });
 
 

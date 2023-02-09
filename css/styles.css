@@ -278,7 +278,7 @@ html {
 
 .projectCards img {
     height: 100%;
-    width: 70%;
+    width: 60%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     /* object-fit: cover; */
@@ -290,12 +290,23 @@ html {
     position: relative;
 }
 
-.projectLink {
-    position:absolute;
-    bottom: 32px;
-    right: 32px;
+.projectBtns {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    gap: 24px;
+    padding-right: 32px;
 }
 
+.projectVid:hover i {
+    color: #01B7FF;
+
+}
 
 .projectLink:hover i {
     color: #01B7FF;
@@ -310,7 +321,7 @@ html {
 
 .projectName {
     padding-bottom: 0.5rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     color:#ffffff;
 }
 
@@ -426,7 +437,7 @@ html {
     }
 
     .projectCards img {
-        height: 50%;
+        height: 40%;
         width: 100%;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -438,10 +449,10 @@ html {
         height: 50%;
     }
 
-    .projectLink {
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
+    .projectBtns {
+        width: 100%;
+        height: 10px;
+        bottom: 0;
     }
 
     .projectLang {
