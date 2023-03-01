@@ -17,7 +17,8 @@ const carousel = document.getElementById("carousel");
 
 $(window).on("load",function() {
     window.scrollTo(0, 0);
-    $(".loadingContainer").fadeOut(2000);
+    $(".loadingContainer").fadeOut(2500);
+    body.style.overflow = "visible"
 });
 
 
