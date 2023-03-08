@@ -484,8 +484,9 @@ html {
 
     .projectDesc {
         font-size: 12px;
-        overflow: auto;
+        overflow-y:scroll;
         height: 70%;
+        overflow: -moz-scrollbars-vertical; 
     }
 
 
