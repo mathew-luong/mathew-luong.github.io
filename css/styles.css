@@ -149,9 +149,33 @@ html {
     padding-bottom: 2.5rem;
 }
 
+.aboutHeader {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+/* Name text typing animation */
 .blueText {
     color: #01B7FF;
+    font-family: monospace;
+    font-weight: 400;
+    border-right: 4px solid #01B7FF;
+    width: 13.3ch;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(13), cursor .5s step-end infinite alternate;
+    animation-delay: 1000ms;
 }
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
 
 .icons {
     color: #fff;
@@ -361,6 +385,7 @@ html {
         height: 250px;
         width: 250px;
         margin: 0;
+        border-radius: 5px;
     }
     .aboutSection {
         margin-bottom: 2rem;
@@ -406,10 +431,11 @@ html {
         padding: 0;
     }
     .aboutImg {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 5px; 
+        width: 100%;
     }
     .aboutContent {
         width: 100%;
