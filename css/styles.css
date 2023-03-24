@@ -530,3 +530,23 @@ html {
         height: 70%;
     }
 }
+
+@media only screen and (min-width: 1536px) {
+    .projectDesc {
+        font-size: 20px;
+
+    }
+    .projectCards img {
+        width: 50%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .projectName {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-size: 24px;
+    }
+    .projectLang {
+        font-size: 16px;
+    }
+}
