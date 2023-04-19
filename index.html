@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
-        <link rel="icon" type="image/x-icon" href="img/webIcon.ico">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/styles.css"
+        />
+        <link rel="icon" type="image/x-icon" href="img/webIcon.ico" />
 
         <!-- GoogleFonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- FontAwesome Icons -->
-        <script src="https://kit.fontawesome.com/8468688554.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/8468688554.js"
+            crossorigin="anonymous"
+        ></script>
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -26,16 +37,81 @@
                 <p class="headerName">mathewLuong.</p>
                 <!-- <a class="darkModeBtn" title="Toggle Darkmode" onclick=handleToggleDarkmode()> -->
                 <a class="darkModeBtn" title="Toggle Darkmode" id="darkmodeBtn">
-                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="lightmodeicon" class="sunIcon">
-                        <ellipse cx="2.49999" cy="2.50566" rx="0.983146" ry="0.963669" fill="#F4E64B"/>
-                        <rect x="2.30334" width="0.5" height="1.2" rx="0.196629" fill="#F4E64B"/>
-                        <rect x="3.82019" y="2.69824" width="0.5" height="1.2" rx="0.192734" transform="rotate(-90 3.82019 2.69824)" fill="#F4E64B"/>
-                        <rect y="2.69824" width="0.5" height="1.2" rx="0.192734" transform="rotate(-90 0 2.69824)" fill="#F4E64B"/>
-                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(0.714145 0.699997 -0.714145 0.699997 4.31738 0.605957)" fill="#F4E64B"/>
-                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(-0.714145 0.699997 0.714145 0.699997 0.671387 0.605957)" fill="#F4E64B"/>
-                        <rect width="0.5" height="1.2" rx="0.196629" transform="matrix(1 0 0 -1 2.30334 5)" fill="#F4E64B"/>
-                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(0.714145 -0.699997 -0.714145 -0.699997 4.31738 4.39404)" fill="#F4E64B"/>
-                        <rect width="0.5" height="1.2" rx="0.194691" transform="matrix(-0.714145 -0.699997 0.714145 -0.699997 0.671387 4.39404)" fill="#F4E64B"/>
+                    <svg
+                        width="5"
+                        height="5"
+                        viewBox="0 0 5 5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="lightmodeicon"
+                        class="sunIcon"
+                    >
+                        <ellipse
+                            cx="2.49999"
+                            cy="2.50566"
+                            rx="0.983146"
+                            ry="0.963669"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            x="2.30334"
+                            width="0.5"
+                            height="1.2"
+                            rx="0.196629"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            x="3.82019"
+                            y="2.69824"
+                            width="0.5"
+                            height="1.2"
+                            rx="0.192734"
+                            transform="rotate(-90 3.82019 2.69824)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            y="2.69824"
+                            width="0.5"
+                            height="1.2"
+                            rx="0.192734"
+                            transform="rotate(-90 0 2.69824)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            width="0.5"
+                            height="1.2"
+                            rx="0.194691"
+                            transform="matrix(0.714145 0.699997 -0.714145 0.699997 4.31738 0.605957)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            width="0.5"
+                            height="1.2"
+                            rx="0.194691"
+                            transform="matrix(-0.714145 0.699997 0.714145 0.699997 0.671387 0.605957)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            width="0.5"
+                            height="1.2"
+                            rx="0.196629"
+                            transform="matrix(1 0 0 -1 2.30334 5)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            width="0.5"
+                            height="1.2"
+                            rx="0.194691"
+                            transform="matrix(0.714145 -0.699997 -0.714145 -0.699997 4.31738 4.39404)"
+                            fill="#F4E64B"
+                        />
+                        <rect
+                            width="0.5"
+                            height="1.2"
+                            rx="0.194691"
+                            transform="matrix(-0.714145 -0.699997 0.714145 -0.699997 0.671387 4.39404)"
+                            fill="#F4E64B"
+                        />
                     </svg>
                     <i class="fa-solid fa-moon" id="darkmodeicon"></i>
                     <!-- <i class="fa-solid fa-sun" id="lightmodeicon"></i> -->
@@ -44,21 +120,52 @@
         </header>
         <!-- Introduction -->
         <div class="aboutSection">
-            <img src="img/aboutImage.jpg" alt="About Picture" class="aboutImg">
+            <img
+                src="img/aboutImage.jpg"
+                alt="About Picture"
+                class="aboutImg"
+            />
             <div class="aboutContent">
-                <h1 class="aboutHeader">Hello my name is<br>
+                <h1 class="aboutHeader">
+                    Hello my name is<br />
                     <p class="blueText">Mathew Luong.</p>
                 </h1>
                 <p id="aboutParagraph">
-                    I am a recent graduate from the University of Calgary with a degree in Computer
-                    Science. I am passionate about front end development and creating intuitive user
-                    experiences. You can check out some of my work below.
+                    I am a recent graduate from the University of Calgary with a
+                    degree in Computer Science. I am passionate about front end
+                    development and creating intuitive user experiences. You can
+                    check out some of my work below.
                 </p>
                 <div class="aboutButtons">
-                    <a href="portfolioresume.pdf" class="workBtn" target="_blank">View my Resume</a>
-                    <a href="https://www.linkedin.com/in/mathew-luong/" target=”_blank” aria-label="linkedin" title="LinkedIn" class="iconsAnchor"><i class="fa-brands fa-linkedin-in icons"></i></a>
-                    <a href="https://github.com/mathew-luong" target=”_blank” aria-label="github" title="GitHub" class="iconsAnchor"><i class="fa-brands fa-github icons"></i></a>
-                    <a href="mailto:mathewluong7@gmail.com" aria-label="email" title="Email" class="iconsAnchor"><i class="fa-solid fa-envelope icons"></i></a>
+                    <a
+                        href="portfolioresume.pdf"
+                        class="workBtn"
+                        target="_blank"
+                        >View my Resume</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/mathew-luong/"
+                        target="”_blank”"
+                        aria-label="linkedin"
+                        title="LinkedIn"
+                        class="iconsAnchor"
+                        ><i class="fa-brands fa-linkedin-in icons"></i
+                    ></a>
+                    <a
+                        href="https://github.com/mathew-luong"
+                        target="”_blank”"
+                        aria-label="github"
+                        title="GitHub"
+                        class="iconsAnchor"
+                        ><i class="fa-brands fa-github icons"></i
+                    ></a>
+                    <a
+                        href="mailto:mathewluong7@gmail.com"
+                        aria-label="email"
+                        title="Email"
+                        class="iconsAnchor"
+                        ><i class="fa-solid fa-envelope icons"></i
+                    ></a>
                 </div>
             </div>
         </div>
@@ -67,111 +174,286 @@
         <div class="projectSection" id="projects">
             <h1>Some of My Work</h1>
             <div class="carousel" id="carousel">
-                <div class="projectCards"  data-cardNum="1" onclick=handleCardClick(1)>
-                    <img src="img/BlogPost.png">
+                <div
+                    class="projectCards"
+                    data-cardNum="1"
+                    onclick="handleCardClick(1)"
+                >
+                    <img src="img/MovieFinder.png" />
                     <div class="projectContent">
-                        <span class="projectLang">MONGODB • EXPRESS.JS • REACT • NODE.JS</span>
-                        <h2 class="projectName">BlogPost</h2>
+                        <span class="projectLang"
+                            >NEXT.JS • TYPESCRIPT • TAILWIND CSS • NEXTAUTH •
+                            POSTGRESQL</span
+                        >
+                        <h2 class="projectName">MovieFinder</h2>
                         <p class="projectDesc">
-                            BlogPost is a web application built on the MERN stack. It allows users to signup and create posts consisting of text or pictures. 
-                            User accounts and post data are all stored in a Mongo database. BlogPost features a modern and responsive user interface built 
-                            with React. The main landing page displays each post and can be sorted by date posted, each post consists of a title, body, and an optional
-                            picture. Users can like posts as well as click on each post to see the full post along with comments made by other users. Code available
-                            upon request.
+                            MovieFinder is a full stack web application built
+                            with Next.JS 13. It utilizes server side rendering
+                            with Tailwind CSS and MUI to create a fully
+                            responsive frontend experience. It allows users to
+                            find a random movie at the click of a button, search
+                            movies by genres, keywords, release year, or rating.
+                            Users can create an account and favourite movies.
+                            The backend is hosted on a PostgreSQL database and
+                            is integrated to the frontend with Prisma and is
+                            deployed on Vercel.
                         </p>
                         <div class="projectBtns">
-                            <a href="https://youtu.be/BZoC5-w3mZc" target="__blank" aria-label="youtube" title="YouTube" class="projectVid"><i class="fa-brands fa-youtube icons"></i></a>
+                            <a
+                                href="https://github.com/mathew-luong/MovieFinder"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                ><i class="fa-brands fa-github icons"></i
+                            ></a>
+                            <a
+                                href="https://moviefinderxyz.vercel.app"
+                                target="__blank"
+                                aria-label="website"
+                                title="Link"
+                                class="projectLink"
+                            >
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square icons fa-lg"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectCards"
+                    data-cardNum="2"
+                    onclick="handleCardClick(2)"
+                >
+                    <img src="img/BlogPost.png" />
+                    <div class="projectContent">
+                        <span class="projectLang"
+                            >MONGODB • EXPRESS.JS • REACT • NODE.JS</span
+                        >
+                        <h2 class="projectName">BlogPost</h2>
+                        <p class="projectDesc">
+                            BlogPost is a web application built on the MERN
+                            stack. It allows users to signup and create posts
+                            consisting of text or pictures. User accounts and
+                            post data are all stored in a Mongo database.
+                            BlogPost features a modern and responsive user
+                            interface built with React. The main landing page
+                            displays each post and can be sorted by date posted,
+                            each post consists of a title, body, and an optional
+                            picture. Users can like posts as well as click on
+                            each post to see the full post along with comments
+                            made by other users. Code available upon request.
+                        </p>
+                        <div class="projectBtns">
+                            <a
+                                href="https://youtu.be/BZoC5-w3mZc"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i class="fa-brands fa-youtube icons"></i
+                            ></a>
                             <!-- <a href="https://github.com/" target="__blank" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a> -->
                         </div>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="2" onclick=handleCardClick(2)>
-                    <img src="img/Tasker.png">
+                <div
+                    class="projectCards"
+                    data-cardNum="3"
+                    onclick="handleCardClick(3)"
+                >
+                    <img src="img/Tasker.png" />
                     <div class="projectContent">
-                        <span class="projectLang">REACT NATIVE • EXPO • JAVASCRIPT</span>
+                        <span class="projectLang"
+                            >REACT NATIVE • EXPO • JAVASCRIPT</span
+                        >
                         <h2 class="projectName">Tasker</h2>
                         <p class="projectDesc">
-                            Tasker is a to-do mobile application designed for users to set tasks and goals in a sleek user friendly interface. Users can categorize 
-                            their tasks and view any upcoming tasks on a calendar view. It is built with React Native and Expo allowing for deployment native to iOS 
-                            and Android. This project taught me many core concepts in React Native such as props, components, and hooks. I also learned how to 
-                            integrate multiple external React Native libraries for a unified and clean user experience.
+                            Tasker is a to-do mobile application designed for
+                            users to set tasks and goals in a sleek user
+                            friendly interface. Users can categorize their tasks
+                            and view any upcoming tasks on a calendar view. It
+                            is built with React Native and Expo allowing for
+                            deployment native to iOS and Android. This project
+                            taught me many core concepts in React Native such as
+                            props, components, and hooks. I also learned how to
+                            integrate multiple external React Native libraries
+                            for a unified and clean user experience.
                         </p>
                         <div class="projectBtns">
-                            <a href="https://youtu.be/4A11d2JefQw" target="__blank" aria-label="youtube" title="YouTube" class="projectVid"><i class="fa-brands fa-youtube icons"></i></a>
-                            <a href="https://github.com/mathew-luong/TaskApp" target="__blank" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                            <a
+                                href="https://youtu.be/4A11d2JefQw"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i class="fa-brands fa-youtube icons"></i
+                            ></a>
+                            <a
+                                href="https://github.com/mathew-luong/TaskApp"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                ><i class="fa-brands fa-github icons"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="3" onclick=handleCardClick(3)>
-                    <img src="img/StudyBot.png" class="projectImg">
+                <div
+                    class="projectCards"
+                    data-cardNum="4"
+                    onclick="handleCardClick(4)"
+                >
+                    <img src="img/StudyBot.png" class="projectImg" />
                     <div class="projectContent">
                         <span class="projectLang">PYTHON • PYCORD</span>
                         <h2 class="projectName">StudyBot</h2>
                         <p class="projectDesc">
-                            StudyBot is a discord bot that allows you and your friends to stay on track of your work and increase productivity. It includes features such as 
-                            creating a reminder, reminding other users on the server, starting a study session, creating flashcards, polls, 
-                            todo lists, and private study rooms. The bot was built with Pycord an API wrapper for Discord. I built the bot after having trouble remaining focused
-                            on various coding projects, and as I was frequently on Discord I decided to integrate a productivity/study bot within the app. Code available upon request.
-
+                            StudyBot is a discord bot that allows you and your
+                            friends to stay on track of your work and increase
+                            productivity. It includes features such as creating
+                            a reminder, reminding other users on the server,
+                            starting a study session, creating flashcards,
+                            polls, todo lists, and private study rooms. The bot
+                            was built with Pycord an API wrapper for Discord. I
+                            built the bot after having trouble remaining focused
+                            on various coding projects, and as I was frequently
+                            on Discord I decided to integrate a
+                            productivity/study bot within the app. Code
+                            available upon request.
                         </p>
                         <div class="projectBtns">
-                            <a href="https://youtu.be/yAzV9ULEMDg" target="__blank" aria-label="youtube" title="YouTube" class="projectVid"><i class="fa-brands fa-youtube icons"></i></a>
+                            <a
+                                href="https://youtu.be/yAzV9ULEMDg"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i class="fa-brands fa-youtube icons"></i
+                            ></a>
                             <!-- <a href="https://github.com/" target="__blank" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a> -->
                         </div>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="4" onclick=handleCardClick(4)>
-                    <img src="img/ChatApp.png">
+                <div
+                    class="projectCards"
+                    data-cardNum="5"
+                    onclick="handleCardClick(5)"
+                >
+                    <img src="img/ChatApp.png" />
                     <div class="projectContent">
-                        <span class="projectLang">SOCKETIO • JAVASCRIPT • HTML • CSS</span>
+                        <span class="projectLang"
+                            >SOCKETIO • JAVASCRIPT • HTML • CSS</span
+                        >
                         <h2 class="projectName">ChatApp</h2>
                         <p class="projectDesc">
-                            ChatApp is a web-based messaging application designed for users to connect and communicate to eachother in real-time. Users can choose a display 
-                            name and interact in a chat room with up to 200 saved messages. It was built using Socket.IO and utilizes Node.JS, Express.JS as backend technologies. 
-                            This project taught me how to setup an application with a server and client, as well as core frontend concepts involving HTML and CSS, such as flexbox,
-                            DOM manipulation, and integrating the backend with the frontend.
+                            ChatApp is a web-based messaging application
+                            designed for users to connect and communicate to
+                            eachother in real-time. Users can choose a display
+                            name and interact in a chat room with up to 200
+                            saved messages. It was built using Socket.IO and
+                            utilizes Node.JS, Express.JS as backend
+                            technologies. This project taught me how to setup an
+                            application with a server and client, as well as
+                            core frontend concepts involving HTML and CSS, such
+                            as flexbox, DOM manipulation, and integrating the
+                            backend with the frontend.
                         </p>
                         <div class="projectBtns">
-                            <a href="https://youtu.be/LP0RBfXlVzs" target="__blank" aria-label="youtube" title="YouTube" class="projectVid"><i class="fa-brands fa-youtube icons"></i></a>
-                            <a href="https://github.com/mathew-luong/ChatApp" target="__blank" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                            <a
+                                href="https://youtu.be/LP0RBfXlVzs"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i class="fa-brands fa-youtube icons"></i
+                            ></a>
+                            <a
+                                href="https://github.com/mathew-luong/ChatApp"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                ><i class="fa-brands fa-github icons"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
-                <div class="projectCards"  data-cardNum="5" onclick=handleCardClick(5)>
-                    <img src="img/temp.jpg">
+                <div
+                    class="projectCards"
+                    data-cardNum="6"
+                    onclick="handleCardClick(6)"
+                >
+                    <img src="img/temp.jpg" />
                     <div class="projectContent">
                         <span class="projectLang">JAVASCRIPT • HTML • CSS</span>
                         <h2 class="projectName">Portfolio Website</h2>
                         <p class="projectDesc">
-                            This portfolio website was built entirely in JS, and stylized with HTML and CSS. The project carousel is built in pure JavaScript including 
-                            the active dots at the bottom. I initially created this website to showcase some of my personal projects I made throughout my degree, however
-                            this project also taught me many basic fundamentals regarding frontend design. Some concepts I learned working on this website include CSS keyframes, 
-                            animations, transitions, event listeners, HTML data attribute, and HTMLStudy selectors.
+                            This portfolio website was built entirely in JS, and
+                            stylized with HTML and CSS. The project carousel is
+                            built in pure JavaScript including the active dots
+                            at the bottom. I initially created this website to
+                            showcase some of my personal projects I made
+                            throughout my degree, however this project also
+                            taught me many basic fundamentals regarding frontend
+                            design. Some concepts I learned working on this
+                            website include CSS keyframes, animations,
+                            transitions, event listeners, HTML data attribute,
+                            and HTMLStudy selectors.
                         </p>
                         <div class="projectBtns">
-                            <a href="https://github.com/mathew-luong/mathew-luong.github.io" target="__blank" aria-label="github" title="GitHub" class="projectLink"><i class="fa-brands fa-github icons"></i></a>
+                            <a
+                                href="https://github.com/mathew-luong/mathew-luong.github.io"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                ><i class="fa-brands fa-github icons"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carouselDots">
-                <span class="dot" data-dotNum="1" onclick=handleCarouselClick(1)></span>
-                <span class="dot"  data-dotNum="2" onclick=handleCarouselClick(2)></span>
-                <span class="dot"  data-dotNum="3" onclick=handleCarouselClick(3)></span>
-                <span class="dot"  data-dotNum="4" onclick=handleCarouselClick(4)></span>
-                <span class="dot"  data-dotNum="5" onclick=handleCarouselClick(5)></span>
+                <span
+                    class="dot"
+                    data-dotNum="1"
+                    onclick="handleCarouselClick(1)"
+                ></span>
+                <span
+                    class="dot"
+                    data-dotNum="2"
+                    onclick="handleCarouselClick(2)"
+                ></span>
+                <span
+                    class="dot"
+                    data-dotNum="3"
+                    onclick="handleCarouselClick(3)"
+                ></span>
+                <span
+                    class="dot"
+                    data-dotNum="4"
+                    onclick="handleCarouselClick(4)"
+                ></span>
+                <span
+                    class="dot"
+                    data-dotNum="5"
+                    onclick="handleCarouselClick(5)"
+                ></span>
+                <span
+                    class="dot"
+                    data-dotNum="6"
+                    onclick="handleCarouselClick(6)"
+                ></span>
             </div>
         </div>
-        <a class="upButton" id="scrollBtn" onclick=handleScrollBtn()><i class="fa-solid fa-arrow-down" id="scrollIcon"></i></a>
+        <a class="upButton" id="scrollBtn" onclick="handleScrollBtn()"
+            ><i class="fa-solid fa-arrow-down" id="scrollIcon"></i
+        ></a>
         <div class="loadingContainer" id="loadingContainer">
-            <svg viewBox="0 0 960 300" class="loadingSvg">
-                <symbol id="s-text">
-                    <text text-anchor="middle" x="50%" y="50%">mL </text>
-                </symbol>
-                <g class="g-ants">
-                  <use xlink:href="#s-text" class="text-anim"></use>
-                </g>
-              </svg>
+            <span class="loader"></span>
         </div>
         <script src="js/main.js"></script>
     </body>

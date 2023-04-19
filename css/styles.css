@@ -4,17 +4,18 @@
     padding: 0;
 }
 
-*::before, *::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Hind', sans-serif;
+    font-family: "Hind", sans-serif;
     color: #fff;
-    background: #1F1F23;
+    background: #1f1f23;
     /* background-image: url('/img/backgroundDark.jpg'); */
     transition: 0.5s;
-    overflow: hidden;
+    overflow: auto;
 }
 
 html {
@@ -36,29 +37,39 @@ html {
     align-items: center;
 }
 
-.loadingSvg {
-    display: block;
-    font: 5rem 'Hind';
-    margin: 0 auto;
-    width: 960px;
-    height: 300px;
+.loader {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    overflow: hidden;
 }
-
-.text-anim {
-    fill: none;
-    stroke: rgb(71, 167, 230);
-    stroke-dasharray: 30% 5%;
-    stroke-width: 2px;
-    stroke-dashoffset: 5%;
-    animation: loading-outline 7s 1 linear; /* Animation duration is 7s, 1 repetition and moves linearly */
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: #222b32;
 }
-
-@keyframes loading-outline {
+.loader:before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #47a7e6;
+    animation: diamondLoader 2s linear infinite;
+}
+@keyframes diamondLoader {
+    0%,
+    10% {
+        transform: translate(-64px, -64px) rotate(-45deg);
+    }
+    90%,
     100% {
-        stroke-dashoffset: 35%;
+        transform: translate(0px, 0px) rotate(-45deg);
     }
 }
-
 
 /* Header Section ------------------------------------------------------------------------ */
 
@@ -72,13 +83,13 @@ html {
 
 .sunIcon {
     width: 30px;
-    height: 30px;   
+    height: 30px;
     display: inline;
     visibility: visible;
 }
 
 #darkmodeicon {
-    color:#27272b;
+    color: #27272b;
     font-size: 5vh;
     display: none;
     visibility: hidden;
@@ -106,7 +117,7 @@ html {
 }
 
 .darkModeBtn:active #lightmodeicon {
-    color:#b2a835;
+    color: #b2a835;
 }
 
 .darkModeBtn:active #darkmodeicon {
@@ -121,13 +132,13 @@ html {
     width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
-    height: 90vh;  
+    height: 90vh;
     padding: 0 0 10vh 0;
     align-items: center;
 }
 
 #aboutParagraph {
-    color:#b3b3b3;
+    color: #b3b3b3;
 }
 
 .aboutImg {
@@ -157,25 +168,28 @@ html {
 
 /* Name text typing animation */
 .blueText {
-    color: #01B7FF;
+    color: #01b7ff;
     font-family: monospace;
     font-weight: 400;
-    border-right: 4px solid #01B7FF;
+    border-right: 4px solid #01b7ff;
     width: 13.3ch;
-    white-space:nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(13), cursor .5s step-end infinite alternate;
+    animation: typing 3s steps(13), cursor 0.5s step-end infinite alternate;
     animation-delay: 1000ms;
 }
 
 @keyframes cursor {
-    50% { border-color: transparent;}
+    50% {
+        border-color: transparent;
+    }
 }
 
 @keyframes typing {
-    from {width: 0;}
+    from {
+        width: 0;
+    }
 }
-
 
 .icons {
     color: #fff;
@@ -185,7 +199,7 @@ html {
 }
 
 .iconsAnchor:hover .icons {
-    color: #01B7FF;
+    color: #01b7ff;
     transform: translateY(-3px);
 }
 
@@ -201,7 +215,7 @@ html {
 }
 
 .iconsAnchor:hover .icLight {
-    color: #01B7FF;
+    color: #01b7ff;
     transform: translateY(-3px);
 }
 
@@ -209,12 +223,11 @@ html {
     color: #0179a9;
 }
 
-
 .workBtn {
-    background-color: #01B7FF;
+    background-color: #01b7ff;
     border-radius: 35px;
     padding: 0.25em 0.75em;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
     transition: transform 0.2s ease-in;
 }
@@ -234,9 +247,7 @@ html {
     padding-bottom: 0;
 }
 
-
 /* Projects Section ------------------------------------------------------------------------ */
-
 
 .projectSection {
     width: 70%;
@@ -246,15 +257,14 @@ html {
     padding: 4rem 0 0 0;
 }
 
-
 .upButton {
-    background-color: #01B7FF;
+    background-color: #01b7ff;
     border-radius: 50%;
     font-size: 5vmin;
     padding: 5px;
     object-fit: cover;
-    width:8vmin;
-    height:8vmin;
+    width: 8vmin;
+    height: 8vmin;
     bottom: 32px;
     right: 32px;
     position: fixed;
@@ -335,25 +345,23 @@ html {
 }
 
 .projectVid:hover i {
-    color: #01B7FF;
-
+    color: #01b7ff;
 }
 
 .projectLink:hover i {
-    color: #01B7FF;
-
+    color: #01b7ff;
 }
 
 .projectLang {
-    font-weight:300;
+    font-weight: 300;
     font-size: 0.75rem;
-    color:#01B7FF;
+    color: #01b7ff;
 }
 
 .projectName {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .carouselDots {
@@ -367,14 +375,15 @@ html {
 .dot {
     width: 15px;
     height: 15px;
-    background-color: #01B7FF;
+    background-color: #01b7ff;
     cursor: pointer;
     display: inline-block;
     border-radius: 50%;
     margin: 2px 5px;
 }
 
-.current, .dot:hover {
+.current,
+.dot:hover {
     background-color: #025a7d;
 }
 
@@ -434,7 +443,7 @@ html {
         margin-top: 1rem;
         margin-bottom: 2rem;
         object-fit: cover;
-        border-radius: 5px; 
+        border-radius: 5px;
         width: 100%;
     }
     .aboutContent {
@@ -454,7 +463,6 @@ html {
         width: 90%;
         padding: 1rem 0 0 0;
     }
-
 
     .carousel {
         scroll-snap-type: x mandatory;
@@ -497,9 +505,9 @@ html {
     }
 
     .projectLang {
-        font-weight:300;
+        font-weight: 300;
         font-size: 10px;
-        color:#01B7FF;
+        color: #01b7ff;
     }
 
     .projectName {
@@ -510,12 +518,10 @@ html {
 
     .projectDesc {
         font-size: 12px;
-        overflow-y:scroll;
+        overflow-y: scroll;
         height: 70%;
-        overflow: -moz-scrollbars-vertical; 
+        overflow: -moz-scrollbars-vertical;
     }
-
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -534,7 +540,6 @@ html {
 @media only screen and (min-width: 1536px) {
     .projectDesc {
         font-size: 20px;
-
     }
     .projectCards img {
         width: 50%;
