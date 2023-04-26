@@ -176,7 +176,7 @@ html {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s steps(13), cursor 0.5s step-end infinite alternate;
-    animation-delay: 1000ms;
+    animation-delay: 600ms;
 }
 
 @keyframes cursor {

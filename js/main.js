@@ -21,7 +21,7 @@ $(window).on("beforeunload", function () {
 
 $(window).on("load", function () {
     window.scrollTo(0, 0);
-    $(".loadingContainer").fadeOut(3000);
+    $(".loadingContainer").fadeOut(2250);
 });
 
 // Darkmode is default
