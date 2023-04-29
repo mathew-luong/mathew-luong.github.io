@@ -1,5 +1,4 @@
 const scrollIcon = document.getElementById("scrollIcon");
-const scrollBtn = document.getElementById("scrollIcon");
 const topSection = document.getElementById("top");
 const projects = document.getElementById("projects");
 const aboutPara = document.getElementById("aboutParagraph");
@@ -13,15 +12,18 @@ const cardTitle = document.querySelectorAll(".projectName");
 const cardDesc = document.querySelectorAll(".projectDesc");
 const carouselDots = document.querySelectorAll(".dot");
 const carousel = document.getElementById("carousel");
-const textanim = document.querySelectorAll(".blueText");
-
-$(window).on("beforeunload", function () {
-    $(window).scrollTop(0);
-});
+const abtImg = document.querySelector(".aboutImg");
+const abtSection = document.querySelector(".aboutSection");
+const header = document.querySelector(".headContainer");
+const scrollBtn = document.querySelector(".upButton");
+const loader = document.querySelector(".loadingContainer");
 
 $(window).on("load", function () {
-    window.scrollTo(0, 0);
-    $(".loadingContainer").fadeOut(2250);
+    // $(".loadingContainer").fadeOut(2250);
+    loader.setAttribute("loaded", "");
+    abtSection.setAttribute("loaded", "");
+    header.setAttribute("loaded", "");
+    scrollBtn.setAttribute("loaded", "");
 });
 
 // Darkmode is default
@@ -121,10 +123,9 @@ function handleCardClick(cardNum) {
 }
 
 // Initially the first card is active
-handleCarouselClick(1);
+carouselDots[0].style.backgroundColor = "#025a7d";
 
 function handleCarouselClick(cardNum) {
-    // console.log("THIS IS THE BUTTON CLICKED:" + cardNum);
     for (i = 0; i < cards.length; i++) {
         if (cardNum == cards[i].getAttribute("data-cardNum")) {
             // Darken the corresponding carousel dot to show it is active
