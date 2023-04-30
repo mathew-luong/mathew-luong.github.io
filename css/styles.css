@@ -204,16 +204,14 @@ html {
 
 .aboutSection {
     display: flex;
-    /* background-color: aqua; */
     width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
     height: 90vh;
     padding: 0 0 10vh 0;
     align-items: center;
-    /* transform: translateY(-5px); */
     opacity: 0;
-    transition: all;
+    transition-property: all;
     transition-delay: calc(var(--loading-duration) * 1.2);
 }
 

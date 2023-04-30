@@ -17,6 +17,8 @@ const abtSection = document.querySelector(".aboutSection");
 const header = document.querySelector(".headContainer");
 const scrollBtn = document.querySelector(".upButton");
 const loader = document.querySelector(".loadingContainer");
+const aboutHeader = document.querySelector(".aboutHello");
+const headerName = document.querySelector(".headerName");
 
 $(window).on("load", function () {
     // $(".loadingContainer").fadeOut(2250);
@@ -98,6 +100,8 @@ function toggleColor(
     body.style.backgroundColor = bodyColor;
     body.style.color = color;
     aboutPara.style.color = paragraphColor;
+    aboutHeader.style.color = color;
+    headerName.style.color = color;
     // Change color of project cards
     for (i = 0; i < cards.length; i++) {
         cards[i].style.backgroundColor = cardColor;
