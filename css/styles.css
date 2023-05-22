@@ -167,37 +167,41 @@ html {
 
 @keyframes slide-up {
     0% {
-        transform: translateY(40px);
+        transform: translateY(50px);
+        opacity: 0;
     }
     100% {
         transform: translateY(0%);
+        opacity: 1;
     }
 }
 
 @keyframes slide-down {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(-50px);
+        opacity: 0;
     }
     100% {
         transform: translateY(0%);
+        opacity: 1;
     }
 }
 
 .headContainer[loaded] {
-    animation: slide-down 250ms ease-in;
-    animation-delay: calc(var(--loading-duration) * 1.4);
+    animation: slide-down 500ms ease-in;
+    animation-delay: calc(var(--loading-duration) * 1.6);
     opacity: 1;
     visibility: visible;
 }
 
 .headContainer {
-    transition-delay: calc(var(--loading-duration) * 1.4);
+    transition-delay: calc(var(--loading-duration) * 1.6);
     opacity: 0;
 }
 
 .aboutSection[loaded] {
     /* .aboutImg[loaded] { */
-    animation: slide-up 250ms ease-in;
+    animation: slide-up 500ms ease-in;
     animation-delay: calc(var(--loading-duration) * 1.2);
     opacity: 1;
 }
