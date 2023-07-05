@@ -289,7 +289,7 @@ html {
 .workBtn {
     background-color: #01b7ff;
     border-radius: 35px;
-    padding: 0.25em 0.75em;
+    padding: 0.25em 1em;
     color: #fff;
     text-decoration: none;
     transition: transform 0.2s ease-in;
@@ -297,10 +297,6 @@ html {
 
 .workBtn:active {
     background-color: #0179a9;
-}
-
-.workBtn:hover {
-    transform: translateY(-3px);
 }
 
 .aboutButtons {
@@ -385,7 +381,6 @@ html {
     height: 90%;
     width: 85%;
     display: flex;
-    /* overflow:hidden; */
 }
 
 .projectCards img {

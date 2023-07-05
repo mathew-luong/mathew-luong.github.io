@@ -20,8 +20,8 @@ const loader = document.querySelector(".loadingContainer");
 const aboutHeader = document.querySelector(".aboutHello");
 const headerName = document.querySelector(".headerName");
 
+//  https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 $(window).on("load", function () {
-    // $(".loadingContainer").fadeOut(2250);
     loader.setAttribute("loaded", "");
     abtSection.setAttribute("loaded", "");
     header.setAttribute("loaded", "");
