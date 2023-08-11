@@ -1,7 +1,7 @@
 const scrollIcon = document.getElementById("scrollIcon");
 const topSection = document.getElementById("top");
 const projects = document.getElementById("projects");
-const aboutPara = document.getElementById("aboutParagraph");
+const heroPara = document.getElementById("heroParagraph");
 const darkmodeIcon = document.getElementById("darkmodeicon");
 const lightmodeIcon = document.getElementById("lightmodeicon");
 const darkmodeBtn = document.getElementById("darkmodeBtn");
@@ -12,17 +12,14 @@ const cardTitle = document.querySelectorAll(".projectName");
 const cardDesc = document.querySelectorAll(".projectDesc");
 const carouselDots = document.querySelectorAll(".dot");
 const carousel = document.getElementById("carousel");
-const abtImg = document.querySelector(".aboutImg");
-const abtSection = document.querySelector(".aboutSection");
+const abtImg = document.querySelector(".heroImg");
+const abtSection = document.querySelector(".heroSection");
 const header = document.querySelector(".headContainer");
 const scrollBtn = document.querySelector(".upButton");
-const loader = document.querySelector(".loadingContainer");
-const aboutHeader = document.querySelector(".aboutHello");
+const heroHeader = document.querySelector(".heroHello");
 const headerName = document.querySelector(".headerName");
 
-//  https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 $(window).on("load", function () {
-    loader.setAttribute("loaded", "");
     abtSection.setAttribute("loaded", "");
     header.setAttribute("loaded", "");
     scrollBtn.setAttribute("loaded", "");
@@ -99,8 +96,8 @@ function toggleColor(
     // Change color of body (text,background)
     body.style.backgroundColor = bodyColor;
     body.style.color = color;
-    aboutPara.style.color = paragraphColor;
-    aboutHeader.style.color = color;
+    heroPara.style.color = paragraphColor;
+    heroHeader.style.color = color;
     headerName.style.color = color;
     // Change color of project cards
     for (i = 0; i < cards.length; i++) {
