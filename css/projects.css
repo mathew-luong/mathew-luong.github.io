@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --theme-color: #0088ff;
+    --loading-duration: 0s;
+    --horizontal-padding-sm: 1.5rem;
+    --horizontal-padding-md: 6rem;
+    --horizontal-padding-lg: 8rem;
+    --horizontal-padding-xl: 10rem;
+    --gap-sm: 2rem;
+    --gap-md: 4rem;
+    --gap-lg: 6rem;
+    --gap-xl: 8rem;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #000;
+    background: #fff;
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: fit-content;
+}
+
+@media (min-width: 768px) {
+    .mainPage {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        overflow: scroll;
+        height: 100vh;
+    }
+    section {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+    .projectSection {
+        overflow: auto;
+    }
+}
+
+.projectSection {
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.returnBtn {
+    all: unset;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    margin-bottom: -1rem;
+    position: fixed;
+    /* padding: 2rem 0; */
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.returnBtn:hover {
+    color: var(--theme-color);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.returnBtn i {
+    margin-right: 8px;
+    transition: all 0.25s ease;
+}
+
+.returnBtn:hover i {
+    transform: translateX(-5px);
+}
+
+.number {
+    font-family: "Roboto Mono", monospace;
+    /* font-size: 1rem; */
+    color: var(--theme-color);
+    margin-right: 5px;
+}
+
+.projectHeader {
+    font-size: 2rem;
+}
+
+.btn {
+    border: var(--theme-color) solid 1px;
+    padding: 1.25em 3em;
+    color: var(--theme-color);
+    text-decoration: none;
+    transition: transform 0.2s ease-in;
+    text-transform: uppercase;
+    font-size: x-small;
+    font-weight: bold;
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-width: fit-content;
+    background: linear-gradient(to right, var(--theme-color) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.25s ease;
+}
+
+.btnDark {
+    border: var(--theme-color) solid 1px;
+    padding: 1.25em 3em;
+    color: var(--theme-color);
+    text-decoration: none;
+    transition: transform 0.2s ease-in;
+    text-transform: uppercase;
+    font-size: x-small;
+    font-weight: bold;
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-width: fit-content;
+    background: linear-gradient(to right, var(--theme-color) 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.25s ease;
+}
+
+.btn:hover,
+.btnDark:hover {
+    color: #fff;
+    background-position: left bottom;
+}
+
+.projectLinks {
+    margin-top: -1rem;
+}
+
+.projectLinks,
+.techStackContainer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.projectDesc {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.techHeader {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.techBox {
+    background-color: #defafe;
+    color: var(--theme-color);
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: "Roboto Mono", monospace;
+}
+
+.boldText {
+    font-weight: bold;
+    color: #000;
+    opacity: 100%;
+}
+
+/* SM Screens */
+@media (min-width: 640px) {
+    .projectSection {
+        padding-left: var(--horizontal-padding-sm);
+        padding-right: var(--horizontal-padding-sm);
+    }
+}
+
+/* MD Screens */
+@media (min-width: 768px) {
+    .projectSection {
+        padding-left: var(--horizontal-padding-md);
+        padding-right: var(--horizontal-padding-md);
+    }
+    .projectSection {
+        margin-bottom: 3rem;
+    }
+}
+
+/* LG Screens */
+@media (min-width: 1024px) {
+    .projectSection {
+        padding-left: var(--horizontal-padding-lg);
+        padding-right: var(--horizontal-padding-lg);
+        max-width: 1024px;
+    }
+    .projectHeader {
+        align-self: left;
+        font-size: 2.75rem;
+    }
+    .projectDesc {
+        max-width: 80ch;
+    }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/projects.css"
+        />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+        <!-- GoogleFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- FontAwesome Icons -->
+        <script
+            src="https://kit.fontawesome.com/8468688554.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Projects - Mathew Luong</title>
+    </head>
+    <body>
+        <div class="mainPage">
+            <section id="cvnnect" class="projectSection">
+                <a
+                    href="/"
+                    title="Return"
+                    class="returnBtn"
+                    aria-label="return button"
+                    ><i class="fa-solid fa-arrow-left-long"></i>Return</a
+                >
+                <h1 class="projectHeader">CVNNECT</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://cvnnect.com"
+                        class="btn"
+                        target="_blank"
+                        title="Link"
+                        >Live Demo
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        CVNNECT is a
+                        <span class="boldText">serverless</span> website for
+                        creating and sharing digital business cards. It allows
+                        users to customize card templates and share with others
+                        through QR code, email, or link.
+                        <span class="boldText">Firebase</span> serves as both
+                        the authentication provider and the database,
+                        facilitated by Firebase's Cloud Firestore.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Outcomes
+                    </h3>
+                    <p class="projectDesc">
+                        CVNNECT originated as a website designed to encapsulate
+                        a
+                        <span class="boldText">SaaS-based product model</span>.
+                        It was inspired from other websites such as Linktree,
+                        where registered users can upload their information and
+                        generate a unique URL for other people to access. The
+                        idea of a digital business card came up as it provided
+                        an easy way to share your information with others while
+                        networking. <br /><br />
+
+                        This project provided a
+                        <span class="boldText">valuable experience</span>, being
+                        my first exposure to Firebase and a serverless
+                        architecture. Inititally I deployed CVNNECT with
+                        Firebase, which taught me how to setup my own
+                        application for deployment for different hosts.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">Next.js</span>
+                        <span class="techBox">TypeScript</span>
+                        <span class="techBox">Firebase</span>
+                        <span class="techBox">Jest</span>
+                        <span class="techBox">TailwindCSS</span>
+                        <span class="techBox">Framer Motion</span>
+                    </div>
+                </div>
+            </section>
+            <section id="moviefinder" class="projectSection">
+                <h1 class="projectHeader">MovieFinder</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://moviefinderxyz.vercel.app/"
+                        class="btn"
+                        target="_blank"
+                        >Live Demo
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                    <a
+                        href="https://github.com/mathew-luong/MovieFinder"
+                        class="btn"
+                        target="_blank"
+                        title="GitHub"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        MovieFinder allows users to find a random movie at the
+                        click of a button, search movies by genres, keywords,
+                        release year, or rating. It utilizes
+                        <span class="boldText">server side rendering</span> to
+                        create a swift user experience achieving Google's
+                        <span class="boldText">Lighthouse scores of 100</span>
+                        across all metrics. The backend consists of a PostgreSQL
+                        database integrated to the frontend with Prisma and is
+                        <span class="boldText">deployed</span>
+                        on Vercel.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Challenges
+                    </h3>
+                    <p class="projectDesc">
+                        I built this project as I've always had trouble deciding
+                        which movies to watch. The central idea behind the
+                        application was having the ability to find a random
+                        movie through the click of a button. <br /><br />
+                        One challenge I faced was accessing an API endpoint from
+                        the client side without exposing the API key. I was able
+                        to accomplish this by using
+                        <span class="boldText"
+                            >Next.js' built-in API routes</span
+                        >
+                        where I passed params to the route which is located on
+                        the server. On the server I then fetch the data and send
+                        a response back to the
+                        <span class="boldText">client side</span> where it is
+                        rendered. I also learned how to integrate an API
+                        (TheMovieDB) into a project and ensure proper practices
+                        of protected information.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">Next.js</span>
+                        <span class="techBox">TypeScript</span>
+                        <span class="techBox">NextAuth</span>
+                        <span class="techBox">PostgreSQL</span>
+                        <span class="techBox">Prisma</span>
+                        <span class="techBox">MaterialUI</span>
+                        <span class="techBox">TailwindCSS</span>
+                    </div>
+                </div>
+            </section>
+            <section id="blogpost" class="projectSection">
+                <h1 class="projectHeader">BlogPost</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://github.com/mathew-luong/blog-app"
+                        class="btn"
+                        target="_blank"
+                        title="GitHub"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://youtu.be/BZoC5-w3mZc"
+                        target="__blank"
+                        aria-label="youtube"
+                        title="YouTube"
+                        class="btn"
+                        >YouTube<i class="fa-brands fa-youtube"></i
+                    ></a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        Inspired as a Reddit redesign, BlogPost allows users to
+                        signup and create posts consisting of text or pictures.
+                        The main landing page beautifully displays each post
+                        organized by date posted. Users can like posts and view
+                        each post to see the full details such as comments made
+                        by other users.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Outcomes
+                    </h3>
+                    <p class="projectDesc">
+                        BlogPost originally began as a Reddit.com clone however
+                        I wanted to challenge myself and redesign the website to
+                        appear more modern and sleek.
+                        <br />
+                        <br />
+                        This project was one of my first full stack applications
+                        where I developed both the backend and frontend
+                        individually. I learned how to develop a
+                        <span class="boldText">REST API</span> in combination
+                        with <span class="boldText">NoSQL</span> database in
+                        MongoDB and integrate it into my frontend. This project
+                        also allowed me to develop a full stack application on
+                        the popular <span class="boldText">MERN</span> tech
+                        stack .
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">MongoDB</span>
+                        <span class="techBox">Express.js</span>
+                        <span class="techBox">React</span>
+                        <span class="techBox">Node.js</span>
+                    </div>
+                </div>
+            </section>
+            <section id="tasker" class="projectSection">
+                <h1 class="projectHeader">Tasker</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://github.com/mathew-luong/TaskApp"
+                        class="btn"
+                        target="_blank"
+                        title="GitHub"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://youtu.be/4A11d2JefQw"
+                        target="__blank"
+                        aria-label="youtube"
+                        title="YouTube"
+                        class="btn"
+                        >YouTube<i class="fa-brands fa-youtube"></i
+                    ></a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        Tasker is a mobile to-do app designed for users to set
+                        and view tasks as well as goals. It supports
+                        functionality for categorizing tasks, viewing upcoming
+                        tasks on a calendar view, and setting
+                        weekly&#47;monthly&#47;yearly goals. It is built with
+                        React Native and Expo allowing for deployment
+                        <span class="boldText">native to iOS and Android</span>.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Outcomes
+                    </h3>
+                    <p class="projectDesc">
+                        During my undergrad, I would always have trouble
+                        organizing my daily tasks, this inspired me to create a
+                        functional app that I could use in my everyday life.
+                        <br />
+                        <br />
+
+                        This project taught me many core concepts in React such
+                        as props, components, and hooks. I also learned how to
+                        integrate multiple external libraries for a practical
+                        user experience. I designed the frontend using
+                        <span class="boldText">Figma</span>, starting with a low
+                        fidelity mockup to a high fidelity
+                        <span class="boldText">wireframe</span>. Once I
+                        finalized the design I was able to implement it using
+                        components and libraries.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">React Native</span>
+                        <span class="techBox">Expo</span>
+                        <span class="techBox">JavaScript</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="studybot" class="projectSection">
+                <h1 class="projectHeader">StudyBot</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://github.com/mathew-luong/discordbot"
+                        class="btn"
+                        target="_blank"
+                        title="GitHub"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://youtu.be/yAzV9ULEMDg"
+                        target="__blank"
+                        aria-label="youtube"
+                        title="YouTube"
+                        class="btn"
+                        >YouTube<i class="fa-brands fa-youtube"></i
+                    ></a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        StudyBot is a discord bot that allows you and your
+                        friends to stay on track of your work and increase
+                        productivity. It includes features such as creating a
+                        reminder, reminding other users on the server, starting
+                        a study session, creating flashcards, polls, todo lists,
+                        and private study rooms. The bot was built with Pycord
+                        an API wrapper for Discord.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Challenges
+                    </h3>
+                    <p class="projectDesc">
+                        I built the bot after having trouble remaining focused
+                        on various coding projects, and as I was frequently on
+                        Discord I challenged myself to integrate a
+                        productivity/study bot within the app itself.
+                        <br /><br />
+                        This project taught me how to work with an external API
+                        and integrate it into a project I am developing specific
+                        features for. During this project I used GitHub for my
+                        <span class="boldText">version control</span> which
+                        taught me good practices involving pull requests,
+                        branches, and using the CLI. I also learned how to
+                        create easy to follow
+                        <span class="boldText">documentation</span>&#47;user
+                        examples for demonstrating the bots features.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">Python</span>
+                        <span class="techBox">Pycord</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="chatapp" class="projectSection">
+                <h1 class="projectHeader">ChatApp</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://github.com/mathew-luong/ChatApp"
+                        class="btn"
+                        title="GitHub"
+                        target="_blank"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://youtu.be/LP0RBfXlVzs"
+                        target="__blank"
+                        aria-label="youtube"
+                        title="YouTube"
+                        class="btn"
+                        >YouTube<i class="fa-brands fa-youtube"></i
+                    ></a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        ChatApp is a web-based messaging application designed
+                        for users to connect and communicate to eachother in
+                        real-time. Users can choose a display name and interact
+                        in a chat room with up to 200 saved messages. It was
+                        built using <span class="boldText">Socket.IO</span> and
+                        utilizes Node.JS, Express.JS as backend technologies.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Outcomes
+                    </h3>
+                    <p class="projectDesc">
+                        I developed this project in vanilla JavaScript as I
+                        wanted to understand fundamental JS concepts and learn
+                        how to manipulate the DOM without any frameworks. This
+                        project taught me how to setup an application with a
+                        <span class="boldText">server and client</span>, as well
+                        as core frontend concepts involving HTML and CSS, such
+                        as flexbox, event handling, and
+                        <span class="boldText">responsive mobile-first</span>
+                        development.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">Socket.IO</span>
+                        <span class="techBox">JavaScript</span>
+                        <span class="techBox">HTML</span>
+                        <span class="techBox">CSS</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/projects.js"></script>
+    </body>
+</html>
