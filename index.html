@@ -9,13 +9,17 @@
             media="screen"
             href="css/styles.css"
         />
-        <link rel="icon" type="image/x-icon" href="img/webIcon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
         <!-- GoogleFonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
             rel="stylesheet"
         />
 
@@ -31,11 +35,9 @@
     </head>
 
     <body id="top">
-        <header>
+        <!-- <header>
             <div class="headContainer">
-                <!-- <img src="img/.jpg" alt="mathewLuong."> -->
-                <p class="headerName">mathewLuong.</p>
-                <!-- <a class="darkModeBtn" title="Toggle Darkmode" onclick=handleToggleDarkmode()> -->
+                <p class="headerName">ML.</p>
                 <a class="darkModeBtn" title="Toggle Darkmode" id="darkmodeBtn">
                     <svg
                         width="5"
@@ -114,143 +116,153 @@
                         />
                     </svg>
                     <i class="fa-solid fa-moon" id="darkmodeicon"></i>
-                    <!-- <i class="fa-solid fa-sun" id="lightmodeicon"></i> -->
                 </a>
             </div>
-        </header>
-        <!-- Introduction -->
-        <div class="aboutSection">
-            <img
-                src="img/aboutImage.jpg"
-                alt="About Picture"
-                class="aboutImg"
-            />
-            <div class="aboutContent">
-                <h1 class="aboutHeader">
-                    <span class="aboutHello">Hello my name is</span><br />
-                    <p class="blueText">Mathew Luong.</p>
-                </h1>
-                <p id="aboutParagraph">
-                    <!-- I am a recent graduate from the University of Calgary with a
-                    degree in Computer Science. I am passionate about
-                    <span class="blueText">front end development</span> and
-                    creating intuitive user experiences. You can check out some
-                    of my work below. -->
-                    I am a recent graduate from the University of Calgary with a
-                    degree in Computer Science. I am a
-                    <span class="blueText">full stack developer</span> with a
-                    passion for both
-                    <span class="boldText">front end development</span> and
-                    <span class="boldText">back end development</span>. You can
-                    check out some of my work below.
-                </p>
-                <div class="aboutButtons">
-                    <a
-                        href="portfolioresume.pdf"
-                        class="workBtn"
-                        target="_blank"
-                        >View my Resume</a
-                    >
-                    <a
-                        href="https://www.linkedin.com/in/mathew-luong/"
-                        target="”_blank”"
-                        aria-label="linkedin"
-                        title="LinkedIn"
-                        class="iconsAnchor"
-                        ><i class="fa-brands fa-linkedin-in icons"></i
-                    ></a>
-                    <a
-                        href="https://github.com/mathew-luong"
-                        target="”_blank”"
-                        aria-label="github"
-                        title="GitHub"
-                        class="iconsAnchor"
-                        ><i class="fa-brands fa-github icons"></i
-                    ></a>
-                    <a
-                        href="mailto:mathewluong7@gmail.com"
-                        aria-label="email"
-                        title="Email"
-                        class="iconsAnchor"
-                        ><i class="fa-solid fa-envelope icons"></i
-                    ></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="projectSection" id="projects">
-            <h1>Some of My Work</h1>
-            <div class="carousel" id="carousel">
-                <div
-                    class="projectCards"
-                    data-cardNum="1"
-                    onclick="handleCardClick(1)"
-                >
-                    <img src="img/Cvnnect.png" />
-                    <div class="projectContent">
-                        <span class="projectLang"
-                            >NEXT.JS • TYPESCRIPT • JEST • FIREBASE</span
-                        >
-                        <h2 class="projectName">CVNNECT</h2>
-                        <p class="projectDesc">
-                            CVNNECT is a serverless SaaS website for creating
-                            and sharing digital business cards. It allows users
-                            to customize card templates and share with others
-                            through QR code, email, or link. Authentication is
-                            done through firebase auth with Google and Email as
-                            providers. The digital business cards are stored in
-                            Cloud firestore which handles basic CRUD operations.
-                            In the future I plan to add the ability to add a
-                            picture to each card as well as more card templates.
-                        </p>
-                        <div class="projectBtns">
-                            <!-- <a
-                                href="https://github.com/mathew-luong/MovieFinder"
-                                target="__blank"
-                                aria-label="github"
-                                title="GitHub"
-                                class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
-                            ></a> -->
-                            <a
-                                href="https://cvnnect.com"
-                                target="__blank"
-                                aria-label="website"
-                                title="Link"
-                                class="projectLink"
+        </header> -->
+        <main id="mainPage">
+            <section class="mainContainer" id="projects">
+                <div class="heroContent">
+                    <div>
+                        <span class="heroIntro">Hello my name is</span>
+                        <h1 class="heroHeader">Mathew Luong.</h1>
+                        <h2 class="heroSubheader">
+                            I'm a full stack developer.
+                        </h2>
+                        <p class="heroParagraph">
+                            I am a Computer Science graduate from the University
+                            of Calgary. I am a passionate
+                            <span class="boldText">software developer</span>
+                            delivering functional, responsive applications
+                            through <span class="boldText">engaging UI</span>. I
+                            am constantly challenging myself to create
+                            end-to-end solutions that encompass both
+                            <span class="boldText"
+                                >front-end and back-end technologies</span
                             >
+                            to solve real world problems.
+                        </p>
+
+                        <div id="resumeBtn">
+                            <a
+                                href="portfolioresume.pdf"
+                                class="btn"
+                                target="_blank"
+                                >My Resume
                                 <i
-                                    class="fa-solid fa-arrow-up-right-from-square icons fa-lg"
+                                    class="fa-solid fa-arrow-right-long arrow"
                                 ></i>
                             </a>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="2"
-                    onclick="handleCardClick(2)"
-                >
-                    <img src="img/MovieFinder.png" />
-                    <div class="projectContent">
-                        <span class="projectLang"
-                            >NEXT.JS • TYPESCRIPT • TAILWINDCSS •
-                            POSTGRESQL</span
+                    <div class="socials">
+                        <a
+                            href="mailto:mathewluong7@gmail.com"
+                            aria-label="email"
+                            title="Email"
+                            class="iconsAnchor"
+                            ><i class="fa-solid fa-envelope icons icon"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/mathew-luong/"
+                            target="”_blank”"
+                            aria-label="linkedin"
+                            title="LinkedIn"
+                            class="iconsAnchor"
+                            ><i class="fa-brands fa-linkedin icons icon"></i
+                        ></a>
+                        <a
+                            href="https://github.com/mathew-luong"
+                            target="”_blank”"
+                            aria-label="github"
+                            title="GitHub"
+                            class="iconsAnchor"
+                            ><i class="fa-brands fa-github icons icon"></i
+                        ></a>
+                        <div
+                            class="darkModeBtn"
+                            onclick="setMode()"
+                            style="cursor: pointer"
                         >
-                        <h2 class="projectName">MovieFinder</h2>
+                            <span class="darkModeTab"></span>
+                            <i class="fa-solid fa-moon fa-xs"></i>
+                            <i class="fa-solid fa-sun fa-xs"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Cards ----------------------------------------------------------------- -->
+                <div class="projectCardContainer">
+                    <h2 class="projectsFeatured">Featured Projects</h2>
+                    <div
+                        class="projectCard unstyledBtn"
+                        title="CVNNECT"
+                        style="cursor: pointer"
+                        onclick="navigate('https://cvnnect.com')"
+                    >
+                        <h3 class="projectName">
+                            <span>CVNNECT</span>
+                            <i class="fa-solid fa-arrow-right-long arrow"></i>
+                        </h3>
+                        <p class="projectDesc">
+                            CVNNECT is a serverless website for creating and
+                            sharing digital business cards. It allows users to
+                            customize card templates and share with others
+                            through QR code, email, or link. Firebase serves as
+                            both the authentication provider and the database,
+                            facilitated by Firebase's Cloud Firestore.
+                        </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#cvnnect"
+                            title="Learn more"
+                            onclick="event.stopImmediatePropagation();"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/Cvnnect.png" class="projectImg" />
+
+                        <div class="projectBtns">
+                            <span class="projectLang"
+                                >NEXT.JS • TYPESCRIPT • FIREBASE • JEST •
+                                TAILWINDCSS • FRAMER MOTION</span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="projectCard unstyledBtn"
+                        title="MovieFinder"
+                        style="cursor: pointer"
+                        onclick="navigate('https://moviefinderxyz.vercel.app')"
+                    >
+                        <h3 class="projectName">
+                            MovieFinder
+                            <i class="fa-solid fa-arrow-right-long arrow"></i>
+                        </h3>
                         <p class="projectDesc">
                             MovieFinder allows users to find a random movie at
                             the click of a button, search movies by genres,
-                            keywords, release year, or rating. I built this
-                            project as I've always had trouble deciding which
-                            movies to watch. Users can create an account
-                            implemented through NextAuth and favourite movies.
-                            It utilizes server side rendering to create a swift
-                            user experience. The backend is hosted on a
-                            PostgreSQL database and is integrated to the
-                            frontend with Prisma and is deployed on Vercel.
+                            keywords, release year, or rating. It utilizes
+                            server side rendering to create a swift user
+                            experience achieving Google's Lighthouse scores of
+                            100 across all metrics. The backend consists of a
+                            PostgreSQL database integrated to the frontend with
+                            Prisma and is deployed on Vercel.
                         </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#moviefinder"
+                            title="Learn more"
+                            onclick="event.stopImmediatePropagation();"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/MovieFinder.png" />
+
                         <div class="projectBtns">
                             <a
                                 href="https://github.com/mathew-luong/MovieFinder"
@@ -258,117 +270,114 @@
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                ><i class="fa-brands fa-github icon"></i
                             ></a>
-                            <a
-                                href="https://moviefinderxyz.vercel.app"
-                                target="__blank"
-                                aria-label="website"
-                                title="Link"
-                                class="projectLink"
+                            <span class="projectLang"
+                                >NEXT.JS • TYPESCRIPT • NEXTAUTH • POSTGRESQL •
+                                PRISMA • MATERIALUI • TAILWINDCSS</span
                             >
-                                <i
-                                    class="fa-solid fa-arrow-up-right-from-square icons fa-lg"
-                                ></i>
-                            </a>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="3"
-                    onclick="handleCardClick(3)"
-                >
-                    <img src="img/BlogPost.png" />
-                    <div class="projectContent">
-                        <span class="projectLang"
-                            >MONGODB • EXPRESS.JS • REACT • NODE.JS</span
-                        >
-                        <h2 class="projectName">BlogPost</h2>
+
+                    <div class="projectCard" title="BlogPost">
+                        <h3 class="projectName">BlogPost</h3>
                         <p class="projectDesc">
                             Inspired as a Reddit redesign, BlogPost allows users
                             to signup and create posts consisting of text or
-                            pictures. The main landing page displays each post
-                            and can be sorted by date posted. Users can like
-                            posts as well as click on each post to see the full
-                            post along with comments made by other users. This
-                            project taught me how to create a full stack
-                            application from a mockup to a fully integrated
-                            frontend and backend. Additionally, I worked with a
-                            NoSQL database in MongoDB for the first time.
+                            pictures. The main landing page beautifully displays
+                            each post organized by date posted. Users can like
+                            posts and view each post to see the full details
+                            such as comments made by other users.
                         </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#blogpost"
+                            title="Learn more"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/BlogPost.png" />
+
                         <div class="projectBtns">
-                            <a
-                                href="https://youtu.be/BZoC5-w3mZc"
-                                target="__blank"
-                                aria-label="youtube"
-                                title="YouTube"
-                                class="projectVid"
-                                ><i class="fa-brands fa-youtube icons"></i
-                            ></a>
                             <a
                                 href="https://github.com/mathew-luong/blog-app"
                                 target="__blank"
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                ><i class="fa-brands fa-github icon"></i
                             ></a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="4"
-                    onclick="handleCardClick(4)"
-                >
-                    <img src="img/Tasker.png" />
-                    <div class="projectContent">
-                        <span class="projectLang"
-                            >REACT NATIVE • EXPO • JAVASCRIPT</span
-                        >
-                        <h2 class="projectName">Tasker</h2>
-                        <p class="projectDesc">
-                            Tasker is a to-do mobile application designed for
-                            users to set tasks and goals in a sleek user
-                            friendly interface. Users can categorize their tasks
-                            and view any upcoming tasks on a calendar view. It
-                            is built with React Native and Expo allowing for
-                            deployment native to iOS and Android. This project
-                            taught me many core concepts in React Native such as
-                            props, components, and hooks. I also learned how to
-                            integrate multiple external React Native libraries
-                            for a unified and clean user experience.
-                        </p>
-                        <div class="projectBtns">
                             <a
-                                href="https://youtu.be/4A11d2JefQw"
+                                href="https://youtu.be/BZoC5-w3mZc"
                                 target="__blank"
                                 aria-label="youtube"
                                 title="YouTube"
                                 class="projectVid"
-                                ><i class="fa-brands fa-youtube icons"></i
+                                ><i
+                                    class="fa-brands fa-youtube"
+                                    style="color: #ff0100"
+                                ></i
                             ></a>
+                            <span class="projectLang"
+                                >MONGODB • EXPRESS.JS • REACT • NODE.JS</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="projectCard" title="Tasker">
+                        <h3 class="projectName">Tasker</h3>
+                        <p class="projectDesc">
+                            Tasker is a mobile to-do app designed for users to
+                            set and view tasks as well as goals. It supports
+                            functionality for categorizing tasks, viewing
+                            upcoming tasks on a calendar view, and setting
+                            weekly&#47;monthly&#47;yearly goals. It is built
+                            with React Native and Expo allowing for deployment
+                            native to iOS and Android.
+                        </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#tasker"
+                            title="Learn more"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/Tasker.png" />
+
+                        <div class="projectBtns">
                             <a
                                 href="https://github.com/mathew-luong/TaskApp"
                                 target="__blank"
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                ><i class="fa-brands fa-github icon"></i
                             ></a>
+                            <a
+                                href="https://youtu.be/4A11d2JefQw"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i
+                                    class="fa-brands fa-youtube"
+                                    style="color: #ff0100"
+                                ></i
+                            ></a>
+                            <span class="projectLang"
+                                >REACT NATIVE • EXPO • JAVASCRIPT</span
+                            >
                         </div>
                     </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="5"
-                    onclick="handleCardClick(5)"
-                >
-                    <img src="img/StudyBot.png" class="projectImg" />
-                    <div class="projectContent">
-                        <span class="projectLang">PYTHON • PYCORD</span>
-                        <h2 class="projectName">StudyBot</h2>
+
+                    <div class="projectCard" title="StudyBot">
+                        <h3 class="projectName">StudyBot</h3>
                         <p class="projectDesc">
                             StudyBot is a discord bot that allows you and your
                             friends to stay on track of your work and increase
@@ -382,37 +391,44 @@
                             on Discord I decided to integrate a
                             productivity/study bot within the app.
                         </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#studybot"
+                            title="Learn more"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/StudyBot.png" />
+
                         <div class="projectBtns">
-                            <a
-                                href="https://youtu.be/yAzV9ULEMDg"
-                                target="__blank"
-                                aria-label="youtube"
-                                title="YouTube"
-                                class="projectVid"
-                                ><i class="fa-brands fa-youtube icons"></i
-                            ></a>
                             <a
                                 href="https://github.com/mathew-luong/discordbot"
                                 target="__blank"
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                ><i class="fa-brands fa-github icon"></i
                             ></a>
+                            <a
+                                href="https://youtu.be/yAzV9ULEMDg"
+                                target="__blank"
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i
+                                    class="fa-brands fa-youtube"
+                                    style="color: #ff0100"
+                                ></i
+                            ></a>
+                            <span class="projectLang">PYTHON • PYCORD</span>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="6"
-                    onclick="handleCardClick(6)"
-                >
-                    <img src="img/ChatApp.png" />
-                    <div class="projectContent">
-                        <span class="projectLang"
-                            >SOCKETIO • JAVASCRIPT • HTML • CSS</span
-                        >
-                        <h2 class="projectName">ChatApp</h2>
+
+                    <div class="projectCard" title="ChatApp" id="chatapp">
+                        <h3 class="projectName">ChatApp</h3>
                         <p class="projectDesc">
                             ChatApp is a web-based messaging application
                             designed for users to connect and communicate to
@@ -426,105 +442,46 @@
                             as flexbox, DOM manipulation, and integrating the
                             backend with the frontend.
                         </p>
+                        <a
+                            style="z-index: 10"
+                            class="moreBtn"
+                            title="Learn more"
+                            href="/projects.html#chatapp"
+                            title="Learn more"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                        <img src="img/ChatApp.png" />
+
                         <div class="projectBtns">
-                            <a
-                                href="https://youtu.be/LP0RBfXlVzs"
-                                target="__blank"
-                                aria-label="youtube"
-                                title="YouTube"
-                                class="projectVid"
-                                ><i class="fa-brands fa-youtube icons"></i
-                            ></a>
                             <a
                                 href="https://github.com/mathew-luong/ChatApp"
                                 target="__blank"
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                ><i class="fa-brands fa-github icon"></i
                             ></a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="projectCards"
-                    data-cardNum="7"
-                    onclick="handleCardClick(7)"
-                >
-                    <img src="img/temp.jpg" />
-                    <div class="projectContent">
-                        <span class="projectLang">JAVASCRIPT • HTML • CSS</span>
-                        <h2 class="projectName">Portfolio Website</h2>
-                        <p class="projectDesc">
-                            This portfolio website was built entirely in JS, and
-                            stylized with HTML and CSS. The project carousel is
-                            built in pure JavaScript including the active dots
-                            at the bottom. I initially created this website to
-                            showcase some of my personal projects I made
-                            throughout my degree, however this project also
-                            taught me many basic fundamentals regarding frontend
-                            design. Some concepts I learned working on this
-                            website include CSS keyframes, animations,
-                            transitions, event listeners, HTML data attribute,
-                            and HTMLStudy selectors.
-                        </p>
-                        <div class="projectBtns">
                             <a
-                                href="https://github.com/mathew-luong/mathew-luong.github.io"
+                                href="https://youtu.be/LP0RBfXlVzs"
                                 target="__blank"
-                                aria-label="github"
-                                title="GitHub"
-                                class="projectLink"
-                                ><i class="fa-brands fa-github icons"></i
+                                aria-label="youtube"
+                                title="YouTube"
+                                class="projectVid"
+                                ><i
+                                    class="fa-brands fa-youtube"
+                                    style="color: #ff0100"
+                                ></i
                             ></a>
+                            <span class="projectLang"
+                                >SOCKETIO • JAVASCRIPT • HTML • CSS</span
+                            >
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carouselDots">
-                <span
-                    class="dot"
-                    data-dotNum="1"
-                    onclick="handleCarouselClick(1)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="2"
-                    onclick="handleCarouselClick(2)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="3"
-                    onclick="handleCarouselClick(3)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="4"
-                    onclick="handleCarouselClick(4)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="5"
-                    onclick="handleCarouselClick(5)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="6"
-                    onclick="handleCarouselClick(6)"
-                ></span>
-                <span
-                    class="dot"
-                    data-dotNum="7"
-                    onclick="handleCarouselClick(7)"
-                ></span>
-            </div>
-        </div>
-        <a class="upButton" id="scrollBtn" onclick="handleScrollBtn()"
-            ><i class="fa-solid fa-arrow-down" id="scrollIcon"></i
-        ></a>
-        <div class="loadingContainer" id="loadingContainer">
-            <span class="loader"></span>
-        </div>
+            </section>
+        </main>
         <script src="js/main.js"></script>
     </body>
 </html>
