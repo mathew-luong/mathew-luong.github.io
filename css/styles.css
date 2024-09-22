@@ -179,11 +179,11 @@ img {
     font-family: "Roboto Mono", monospace;
     margin-bottom: 0.5rem;
     color: var(--theme-color);
-    font-size: small;
+    font-size: smaller !important;
 }
 
 .heroHeader {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem !important;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -478,7 +478,7 @@ img {
     transition: transform 0.2s ease-in;
 }
 
-.icon:hover {
+.icon:active {
     opacity: 50%;
 }
 

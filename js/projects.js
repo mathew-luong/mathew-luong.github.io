@@ -1,6 +1,6 @@
 const body = document.body;
 
-const returnBtn = document.querySelector(".returnBtn");
+const returnBtns = document.querySelectorAll(".returnBtn");
 const links = document.querySelectorAll(".btn");
 const techBoxes = document.querySelectorAll(".techBox");
 const projectDesc = document.querySelectorAll(".projectDesc");
@@ -17,8 +17,12 @@ const setMode = () => {
         body.style.color = "#fff";
         body.style.background = "#000";
 
-        returnBtn.style.color = "#fff";
-        returnBtn.style.backgroundColor = "#000";
+        // returnBtn.style.color = "#fff";
+        // returnBtn.style.backgroundColor = "#000";
+
+        for (let btn of returnBtns) {
+            btn.classList.replace("returnBtn", "returnBtnDark");
+        }
 
         for (let link of links) {
             link.classList.replace("btn", "btnDark");
