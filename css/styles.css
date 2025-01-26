@@ -51,7 +51,8 @@ img {
     transition-delay: calc(var(--loading-duration) * 1);
 }
 
-.heroParagraph {
+.heroParagraph,
+.heroStatusContainer {
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.5s;
@@ -78,18 +79,10 @@ img {
 
 .heroIntro[loaded],
 .heroHeader[loaded],
-.heroSubheader[loaded] {
-    opacity: 1;
-}
-
-.heroParagraph[loaded] {
-    opacity: 1;
-}
-
-#resumeBtn[loaded] {
-    opacity: 1;
-}
-
+.heroSubheader[loaded],
+.heroParagraph[loaded],
+.heroStatusContainer[loaded],
+#resumeBtn[loaded],
 .projectCardContainer[loaded],
 .socials[loaded] {
     opacity: 1;
@@ -149,7 +142,7 @@ img {
 }
 
 /* LG Screens */
-@media (min-width: 1024px) {
+@media (min-width: 1168px) {
     .mainContainer {
         padding-left: var(--horizontal-padding-xl);
         padding-right: var(--horizontal-padding-xl);
@@ -184,15 +177,31 @@ img {
 
 .heroHeader {
     margin-bottom: 0.5rem !important;
-    font-size: 2rem;
-    font-weight: bold;
+    /* font-size: 2rem; */
+    /* font-weight: bold; */
+}
+
+.colorText {
+    font-family: "Calistoga", serif;
+    line-height: 1.25;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+        83.84deg,
+        #08f -6.87%,
+        #a033ff 26.54%,
+        #ff5c87 58.58%
+    );
 }
 
 .heroSubheader {
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #9b9b9b;
 }
 
 .heroParagraph {
@@ -207,6 +216,25 @@ img {
     border-radius: 12px;
     pointer-events: none;
     max-width: 100%;
+}
+
+.heroStatusContainer {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.heroStatus {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: left;
+}
+
+.heroStatusText {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -266,7 +294,7 @@ img {
 }
 
 /* LG Screens */
-@media (min-width: 1024px) {
+@media (min-width: 1168px) {
     .heroContent {
         display: flex;
         flex-direction: column;
@@ -335,11 +363,20 @@ img {
 }
 
 .projectCard:hover {
-    background-color: #f3f4f6;
+    background-color: #f4f5f7;
+    border-color: #f4f5f7;
 }
 
-.projectCard:hover h3,
-.projectCardDark:hover h3 {
+.projectCard:hover h3.projectName,
+.projectCardDark:hover h3.projectName {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(83.84deg, #a033ff 26.54%, #ff5c87 58.58%);
+    color: var(--theme-color);
+}
+
+.projectCard:hover h3 > i,
+.projectCardDark:hover h3 > i {
     color: var(--theme-color);
 }
 
@@ -436,7 +473,7 @@ img {
 }
 
 /* LG Screens */
-@media (min-width: 1024px) {
+@media (min-width: 1168px) {
     .projectCardContainer {
         width: 60%;
         padding-top: var(--gap-lg);

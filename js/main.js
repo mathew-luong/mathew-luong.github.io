@@ -1,15 +1,17 @@
 const body = document.body;
 
-const heroIntro = document.querySelector(".heroIntro");
+// const heroIntro = document.querySelector(".heroIntro");
 const heroHeader = document.querySelector(".heroHeader");
 const heroSubheader = document.querySelector(".heroSubheader");
 const heroParagraph = document.querySelector(".heroParagraph");
+const heroStatus = document.querySelector(".heroStatusContainer");
 const resumeBtn = document.querySelector("#resumeBtn");
 const btn = document.querySelector(".btn");
 
 const socials = document.querySelector(".socials");
 const boldText = document.querySelectorAll(".boldText");
 const icons = document.querySelectorAll(".icon");
+const heroStatusText = document.querySelectorAll(".heroStatusText");
 
 const projectsContainer = document.querySelector(".projectCardContainer");
 const moreBtns = document.querySelectorAll(".moreBtn");
@@ -22,10 +24,11 @@ const navigate = (link) => {
 };
 
 $(window).on("load", function () {
-    heroIntro.setAttribute("loaded", "");
+    // heroIntro.setAttribute("loaded", "");
     heroHeader.setAttribute("loaded", "");
     heroSubheader.setAttribute("loaded", "");
     heroParagraph.setAttribute("loaded", "");
+    heroStatus.setAttribute("loaded", "");
     resumeBtn.setAttribute("loaded", "");
     socials.setAttribute("loaded", "");
 
@@ -60,6 +63,9 @@ const setDarkMode = () => {
     for (let icon of icons) {
         icon.style.color = "#fff";
     }
+    for (let text of heroStatusText) {
+        text.style.color = "rgba(255, 255, 255, 0.5)";
+    }
 };
 
 const setLightMode = () => {
@@ -83,6 +89,9 @@ const setLightMode = () => {
     }
     for (let icon of icons) {
         icon.style.color = "#000";
+    }
+    for (let text of heroStatusText) {
+        text.style.color = "rgba(0, 0, 0, 0.5)";
     }
 };
 

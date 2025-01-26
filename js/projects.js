@@ -1,10 +1,10 @@
 const body = document.body;
 
-const returnBtns = document.querySelectorAll(".returnBtn");
 const links = document.querySelectorAll(".btn");
 const techBoxes = document.querySelectorAll(".techBox");
 const projectDesc = document.querySelectorAll(".projectDesc");
 const boldText = document.querySelectorAll(".boldText");
+const footerButtons = document.querySelectorAll(".footerBtn");
 
 function setLightModeLocalStorage() {
     if (!localStorage.getItem("isLightmode")) {
@@ -16,13 +16,6 @@ const setMode = () => {
     if (localStorage.getItem("isLightmode") === "False") {
         body.style.color = "#fff";
         body.style.background = "#000";
-
-        // returnBtn.style.color = "#fff";
-        // returnBtn.style.backgroundColor = "#000";
-
-        for (let btn of returnBtns) {
-            btn.classList.replace("returnBtn", "returnBtnDark");
-        }
 
         for (let link of links) {
             link.classList.replace("btn", "btnDark");
@@ -38,6 +31,9 @@ const setMode = () => {
 
         for (let techBox of techBoxes) {
             techBox.style.backgroundColor = "rgba(0, 136, 255, 0.264)";
+        }
+        for (let btn of footerButtons) {
+            btn.classList.replace("footerBtn", "footerBtnDark");
         }
     }
 };
