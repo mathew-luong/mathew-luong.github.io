@@ -42,17 +42,22 @@
         <main id="mainPage">
             <section class="mainContainer" id="projects">
                 <div class="heroContent">
-                    <div>
+                    <div class="heroText">
                         <h1 class="heroHeader">
-                            <span class="colorText">Hi I'm Mathew</span> 👋
+                            <span class="colorText">hi im mathew</span>
+                            <span class="waveEmoji"> 👋</span>
+                            <!-- <span class="colorText">Hi I'm Mathew</span> 👋 -->
                         </h1>
                         <h2 class="heroSubheader">
                             I'm a full stack developer.
                         </h2>
                         <p class="heroParagraph">
                             I am a Computer Science graduate from the University
-                            of Calgary. I specialize in delivering functional,
-                            responsive applications through engaging UI.
+                            of Calgary.
+                            <!-- I specialize in delivering functional,
+                            responsive applications through engaging UI. -->
+                            I transform complex ideas into engaging digital
+                            experiences.
                         </p>
                         <div class="heroStatusContainer">
                             <div class="heroStatus" style="padding-left: 2px">
@@ -151,6 +156,15 @@
                         <img src="img/Cvnnect.png" class="projectImg" />
 
                         <div class="projectBtns">
+                            <a
+                                href="https://github.com/mathew-luong/DigitalCardApp"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                onclick="event.stopImmediatePropagation();"
+                                ><i class="fa-brands fa-github icon"></i
+                            ></a>
                             <span class="projectLang"
                                 >NEXT.JS • TYPESCRIPT • FIREBASE • TAILWINDCSS •
                                 FRAMER MOTION</span
@@ -197,6 +211,7 @@
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
+                                onclick="event.stopImmediatePropagation();"
                                 ><i class="fa-brands fa-github icon"></i
                             ></a>
                             <span class="projectLang"
@@ -441,15 +456,7 @@
                             >
                         </div>
                     </div>
-                    <div
-                        style="
-                            padding-bottom: 6rem;
-                            font-size: smaller;
-                            color: rgba(0, 0, 0, 0.5);
-                        "
-                    >
-                        © 2025 Mathew Luong
-                    </div>
+                    <div class="copyright">© 2025 Mathew Luong</div>
                 </div>
             </section>
         </main>

@@ -69,13 +69,13 @@ section {
 
 .number {
     font-family: "Roboto Mono", monospace;
-    /* font-size: 1rem; */
     color: var(--theme-color);
     margin-right: 5px;
 }
 
 .projectHeader {
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -169,7 +169,7 @@ section {
     color: black;
     position: fixed;
     left: 50vw;
-    bottom: 1rem;
+    bottom: 0rem;
     translate: -50% -50%;
     z-index: 99;
     padding: 1rem;
@@ -188,6 +188,11 @@ section {
     justify-content: space-between;
 }
 
+.footerActions a:hover i {
+    transition: all 0.25s ease;
+    color: var(--theme-color);
+}
+
 .footerBtn {
     color: #000;
 }
@@ -200,7 +205,6 @@ section {
     overflow-x: hidden;
 }
 
-/* Define the scrollbar style */
 .mainPage::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -208,10 +212,12 @@ section {
 
 .mainPage::-webkit-scrollbar-thumb {
     background: var(--theme-color);
+    background: #d6d7d9;
 }
 
 .mainPage::-webkit-scrollbar-button {
     background-color: var(--theme-color);
+    background-color: #d6d7d9;
 }
 
 /* SM Screens */

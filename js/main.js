@@ -7,6 +7,7 @@ const heroParagraph = document.querySelector(".heroParagraph");
 const heroStatus = document.querySelector(".heroStatusContainer");
 const resumeBtn = document.querySelector("#resumeBtn");
 const btn = document.querySelector(".btn");
+const copyright = document.querySelector(".copyright");
 
 const socials = document.querySelector(".socials");
 const boldText = document.querySelectorAll(".boldText");
@@ -46,6 +47,7 @@ const setDarkMode = () => {
     body.style.color = "#fff";
     body.style.background = "#000";
     heroParagraph.style.color = "rgba(255, 255, 255, 0.5)";
+    copyright.style.color = "rgba(255, 255, 255, 0.5)";
     btn.classList.replace("btn", "btnDark");
 
     for (let bold of boldText) {
@@ -73,6 +75,7 @@ const setLightMode = () => {
     body.style.color = "#000";
     body.style.background = "#fff";
     heroParagraph.style.color = "rgba(0, 0, 0, 0.5)";
+    copyright.style.color = "rgba(0, 0, 0, 0.5)";
     btn.classList.replace("btnDark", "btn");
 
     for (let bold of boldText) {

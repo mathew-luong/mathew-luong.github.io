@@ -10,7 +10,7 @@
 }
 
 :root {
-    --theme-color: #0088ff;
+    --theme-color: #08f;
     --loading-duration: 0.3s;
     --horizontal-padding-sm: 1.5rem;
     --horizontal-padding-md: 6rem;
@@ -43,38 +43,31 @@ img {
 
 .heroIntro,
 .heroHeader,
-.heroSubheader {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: calc(var(--loading-duration) * 1);
-}
-
+.heroSubheader,
 .heroParagraph,
-.heroStatusContainer {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: calc(var(--loading-duration) * 2);
-}
-
+.heroStatusContainer,
 #resumeBtn {
     opacity: 0;
     transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: calc(var(--loading-duration) * 3);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: calc(var(--loading-duration) * 1);
 }
 
-.projectCardContainer,
 .socials {
     opacity: 0;
     transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: calc(var(--loading-duration) * 4.5);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: calc(var(--loading-duration) * 3);
+}
+
+.projectCardContainer {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: calc(var(--loading-duration) * 5);
 }
 
 .heroIntro[loaded],
@@ -177,8 +170,6 @@ img {
 
 .heroHeader {
     margin-bottom: 0.5rem !important;
-    /* font-size: 2rem; */
-    /* font-weight: bold; */
 }
 
 .colorText {
@@ -196,6 +187,52 @@ img {
         #a033ff 26.54%,
         #ff5c87 58.58%
     );
+
+    /* background: linear-gradient(
+        to right,
+        #08f 20%,
+        #ff5c87 30%,
+        #a033ff 70%,
+        #08f 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate; */
+}
+
+.colorText {
+    background: linear-gradient(
+        to right,
+        /* #08f 20%,
+        #ff5c87 30%,
+        #a033ff 70%,
+        #08f 80% */
+            #ff5c87 20%,
+        #a033ff 30%,
+        #08f 70%,
+        #ff5c87 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.waveEmoji {
+    line-height: 1.25;
+    font-size: 3rem;
 }
 
 .heroSubheader {
@@ -364,7 +401,7 @@ img {
 
 .projectCard:hover {
     background-color: #f4f5f7;
-    border-color: #f4f5f7;
+    border: 1px solid #f4f5f7 !important;
 }
 
 .projectCard:hover h3.projectName,
@@ -472,6 +509,11 @@ img {
     color: var(--theme-color);
 }
 
+.projectLink {
+    pointer-events: all;
+    z-index: 99;
+}
+
 /* LG Screens */
 @media (min-width: 1168px) {
     .projectCardContainer {
@@ -481,6 +523,9 @@ img {
     }
     .projectImg {
         max-width: 100%;
+    }
+    .copyright {
+        padding-bottom: 6rem;
     }
 }
 
@@ -533,4 +578,9 @@ img {
 .iconsAnchor:hover .icLight {
     color: var(--theme-color);
     transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.5);
 }
