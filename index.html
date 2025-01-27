@@ -22,6 +22,10 @@
             href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- FontAwesome Icons -->
         <script
@@ -35,108 +39,41 @@
     </head>
 
     <body id="top">
-        <!-- <header>
-            <div class="headContainer">
-                <p class="headerName">ML.</p>
-                <a class="darkModeBtn" title="Toggle Darkmode" id="darkmodeBtn">
-                    <svg
-                        width="5"
-                        height="5"
-                        viewBox="0 0 5 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        id="lightmodeicon"
-                        class="sunIcon"
-                    >
-                        <ellipse
-                            cx="2.49999"
-                            cy="2.50566"
-                            rx="0.983146"
-                            ry="0.963669"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            x="2.30334"
-                            width="0.5"
-                            height="1.2"
-                            rx="0.196629"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            x="3.82019"
-                            y="2.69824"
-                            width="0.5"
-                            height="1.2"
-                            rx="0.192734"
-                            transform="rotate(-90 3.82019 2.69824)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            y="2.69824"
-                            width="0.5"
-                            height="1.2"
-                            rx="0.192734"
-                            transform="rotate(-90 0 2.69824)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            width="0.5"
-                            height="1.2"
-                            rx="0.194691"
-                            transform="matrix(0.714145 0.699997 -0.714145 0.699997 4.31738 0.605957)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            width="0.5"
-                            height="1.2"
-                            rx="0.194691"
-                            transform="matrix(-0.714145 0.699997 0.714145 0.699997 0.671387 0.605957)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            width="0.5"
-                            height="1.2"
-                            rx="0.196629"
-                            transform="matrix(1 0 0 -1 2.30334 5)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            width="0.5"
-                            height="1.2"
-                            rx="0.194691"
-                            transform="matrix(0.714145 -0.699997 -0.714145 -0.699997 4.31738 4.39404)"
-                            fill="#F4E64B"
-                        />
-                        <rect
-                            width="0.5"
-                            height="1.2"
-                            rx="0.194691"
-                            transform="matrix(-0.714145 -0.699997 0.714145 -0.699997 0.671387 4.39404)"
-                            fill="#F4E64B"
-                        />
-                    </svg>
-                    <i class="fa-solid fa-moon" id="darkmodeicon"></i>
-                </a>
-            </div>
-        </header> -->
         <main id="mainPage">
             <section class="mainContainer" id="projects">
                 <div class="heroContent">
-                    <div>
-                        <span class="heroIntro">Hello my name is</span>
-                        <h1 class="heroHeader">Mathew Luong.</h1>
+                    <div class="heroText">
+                        <h1 class="heroHeader">
+                            <span class="colorText">hi im mathew</span>
+                            <span class="waveEmoji"> 👋</span>
+                            <!-- <span class="colorText">Hi I'm Mathew</span> 👋 -->
+                        </h1>
                         <h2 class="heroSubheader">
                             I'm a full stack developer.
                         </h2>
                         <p class="heroParagraph">
                             I am a Computer Science graduate from the University
-                            of Calgary. I am a passionate software developer
-                            delivering functional, responsive applications
-                            through engaging UI. I love challenging myself to
-                            create captivating solutions to solve real world
-                            problems.
+                            of Calgary.
+                            <!-- I specialize in delivering functional,
+                            responsive applications through engaging UI. -->
+                            I transform complex ideas into engaging digital
+                            experiences.
                         </p>
-
+                        <div class="heroStatusContainer">
+                            <div class="heroStatus" style="padding-left: 2px">
+                                <i
+                                    class="fa-solid fa-location-dot icon"
+                                    style="margin-right: 2px"
+                                ></i>
+                                <p class="heroStatusText">Calgary, AB</p>
+                            </div>
+                            <div class="heroStatus">
+                                <i class="fa-solid fa-briefcase icon"></i>
+                                <p class="heroStatusText">
+                                    Full Stack Developer at CRL Synergy
+                                </p>
+                            </div>
+                        </div>
                         <div id="resumeBtn">
                             <a
                                 href="portfolioresume.pdf"
@@ -219,6 +156,15 @@
                         <img src="img/Cvnnect.png" class="projectImg" />
 
                         <div class="projectBtns">
+                            <a
+                                href="https://github.com/mathew-luong/DigitalCardApp"
+                                target="__blank"
+                                aria-label="github"
+                                title="GitHub"
+                                class="projectLink"
+                                onclick="event.stopImmediatePropagation();"
+                                ><i class="fa-brands fa-github icon"></i
+                            ></a>
                             <span class="projectLang"
                                 >NEXT.JS • TYPESCRIPT • FIREBASE • TAILWINDCSS •
                                 FRAMER MOTION</span
@@ -265,6 +211,7 @@
                                 aria-label="github"
                                 title="GitHub"
                                 class="projectLink"
+                                onclick="event.stopImmediatePropagation();"
                                 ><i class="fa-brands fa-github icon"></i
                             ></a>
                             <span class="projectLang"
@@ -359,7 +306,6 @@
                             >
                         </div>
                     </div>
-
                     <div class="projectCard" title="Tasker">
                         <h3 class="projectName">Tasker</h3>
                         <p class="projectDesc">
@@ -408,7 +354,6 @@
                             >
                         </div>
                     </div>
-
                     <div class="projectCard" title="StudyBot">
                         <h3 class="projectName">StudyBot</h3>
                         <p class="projectDesc">
@@ -459,7 +404,6 @@
                             <span class="projectLang">PYTHON • PYCORD</span>
                         </div>
                     </div>
-
                     <div class="projectCard" title="ChatApp" id="chatapp">
                         <h3 class="projectName">ChatApp</h3>
                         <p class="projectDesc">
@@ -512,6 +456,7 @@
                             >
                         </div>
                     </div>
+                    <div class="copyright">© 2025 Mathew Luong</div>
                 </div>
             </section>
         </main>
