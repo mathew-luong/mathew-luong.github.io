@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script>if(localStorage.getItem('isLightmode')==='False'){document.documentElement.classList.add('dark');}</script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -108,38 +109,37 @@
             </section>
         </div>
         <footer class="footer">
-            <div class="footerActions">
-                <a
-                    href="/"
-                    title="Home"
-                    class="footerBtn"
-                    aria-label="home button"
-                    ><i class="fa-solid fa-house"></i>
-                </a>
+            <a href="../" class="footerHome" aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <nav class="footerNav">
                 <a
                     href="mailto:mathewluong7@gmail.com"
-                    title="Email"
-                    class="footerBtn"
-                    aria-label="email"
-                    ><i class="fa-solid fa-envelope fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
                 </a>
                 <a
                     href="https://www.linkedin.com/in/mathew-luong/"
                     target="_blank"
-                    title="LinkedIn"
-                    class="footerBtn"
-                    aria-label="linkedin"
-                    ><i class="fa-brands fa-linkedin fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
                 </a>
                 <a
                     href="https://github.com/mathew-luong"
                     target="_blank"
-                    aria-label="github"
-                    title="GitHub"
-                    class="footerBtn"
-                    ><i class="fa-brands fa-github fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
                 </a>
-            </div>
+            </nav>
         </footer>
         <script src="../js/projects.js"></script>
     </body>

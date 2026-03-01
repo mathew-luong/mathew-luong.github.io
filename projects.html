@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
+        <script>if(localStorage.getItem('isLightmode')==='False'){document.documentElement.classList.add('dark');}</script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,105 +37,198 @@
     </head>
     <body>
         <div class="mainPage">
-            <h1 class="projectListHeader">Projects</h1>
-            <ul class="projectList">
-                <a href="projects/cvnnect.html" class="projectListItem">
-                    <span class="projectListName">CVNNECT</span>
-                    <div class="projectListTags">
-                        <span class="techBox">Next.js</span>
-                        <span class="techBox">TypeScript</span>
-                        <span class="techBox">Firebase</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/moviefinder.html" class="projectListItem">
-                    <span class="projectListName">MovieFinder</span>
-                    <div class="projectListTags">
-                        <span class="techBox">Next.js</span>
-                        <span class="techBox">PostgreSQL</span>
-                        <span class="techBox">Prisma</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/aqualife.html" class="projectListItem">
-                    <span class="projectListName">Aqualife 88</span>
-                    <div class="projectListTags">
-                        <span class="techBox">Next.js</span>
-                        <span class="techBox">Sanity.io</span>
-                        <span class="techBox">TailwindCSS</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/blogpost.html" class="projectListItem">
-                    <span class="projectListName">BlogPost</span>
-                    <div class="projectListTags">
-                        <span class="techBox">MongoDB</span>
-                        <span class="techBox">Express.js</span>
-                        <span class="techBox">React</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/tasker.html" class="projectListItem">
-                    <span class="projectListName">Tasker</span>
-                    <div class="projectListTags">
-                        <span class="techBox">React Native</span>
-                        <span class="techBox">Expo</span>
-                        <span class="techBox">JavaScript</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/studybot.html" class="projectListItem">
-                    <span class="projectListName">StudyBot</span>
-                    <div class="projectListTags">
-                        <span class="techBox">Python</span>
-                        <span class="techBox">Pycord</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-                <a href="projects/chatapp.html" class="projectListItem">
-                    <span class="projectListName">ChatApp</span>
-                    <div class="projectListTags">
-                        <span class="techBox">Socket.IO</span>
-                        <span class="techBox">JavaScript</span>
-                        <span class="techBox">Node.js</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-long projectListArrow"></i>
-                </a>
-            </ul>
+            <div class="projectsContainer">
+                <h1 class="projectListHeader">Projects</h1>
+                <p class="projectListSubheader">
+                    A collection of things I've built.
+                </p>
+                <div class="bentoGrid">
+                    <!-- Row 1: CVNNECT (large) + MovieFinder -->
+                    <a
+                        href="projects/cvnnect.html"
+                        class="bentoCard bentoLarge"
+                    >
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/Cvnnect.png"
+                                class="bentoCardImg"
+                                alt="CVNNECT screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">CVNNECT</h2>
+                            <p class="bentoCardDesc">
+                                SaaS website for creating and sharing digital
+                                business cards. Customize templates and share
+                                via QR code, email, or link.
+                            </p>
+                            <span class="projectLang"
+                                >NEXT.JS • TYPESCRIPT • FIREBASE • TAILWINDCSS •
+                                FRAMER MOTION</span
+                            >
+                        </div>
+                    </a>
+                    <a href="projects/moviefinder.html" class="bentoCard">
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/MovieFinder.png"
+                                class="bentoCardImg"
+                                alt="MovieFinder screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">MovieFinder</h2>
+                            <p class="bentoCardDesc">
+                                Find a random movie at the click of a button or
+                                search by genre, keyword, year, and rating. It
+                                utilizes server side rendering to create a swift
+                                user experience achieving Google's Lighthouse
+                                scores of 100 across all metrics.
+                            </p>
+                            <span class="projectLang"
+                                >NEXT.JS • TYPESCRIPT • NEXTAUTH • POSTGRESQL •
+                                PRISMA • MATERIALUI • TAILWINDCSS</span
+                            >
+                        </div>
+                    </a>
+
+                    <!-- Row 2: Aqualife + BlogPost (large) -->
+                    <a href="projects/aqualife.html" class="bentoCard">
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/Aqualife.png"
+                                class="bentoCardImg"
+                                alt="Aqualife 88 screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">Aqualife 88</h2>
+                            <p class="bentoCardDesc">
+                                Freelance website for a local aquarium shop with
+                                CMS, gallery, and an integrated contact form.
+                            </p>
+                            <span class="projectLang">
+                                NEXT.JS • SANITY.IO • RESEND
+                            </span>
+                        </div>
+                    </a>
+                    <a
+                        href="projects/blogpost.html"
+                        class="bentoCard bentoLarge"
+                    >
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/BlogPost.png"
+                                class="bentoCardImg"
+                                alt="BlogPost screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">BlogPost</h2>
+                            <p class="bentoCardDesc">
+                                Reddit-inspired full-stack app where users can
+                                post text or images, like posts, and leave
+                                comments.
+                            </p>
+                            <span class="projectLang">
+                                MONGODB • EXPRESS.JS • REACT • NODE.JS
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Row 3: Tasker + StudyBot + ChatApp -->
+                    <a href="projects/tasker.html" class="bentoCard">
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/Tasker.png"
+                                class="bentoCardImg"
+                                alt="Tasker screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">Tasker</h2>
+                            <p class="bentoCardDesc">
+                                Mobile to-do app for setting tasks, goals, and
+                                viewing upcoming items on a calendar.
+                            </p>
+                            <span class="projectLang">
+                                REACT NATIVE • EXPO
+                            </span>
+                        </div>
+                    </a>
+                    <a href="projects/studybot.html" class="bentoCard">
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/StudyBot.png"
+                                class="bentoCardImg"
+                                alt="StudyBot screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">StudyBot</h2>
+                            <p class="bentoCardDesc">
+                                Discord bot to boost productivity with
+                                reminders, study sessions, flashcards, and
+                                polls.
+                            </p>
+                            <span class="projectLang"> PYTHON • PYCORD </span>
+                        </div>
+                    </a>
+                    <a href="projects/chatapp.html" class="bentoCard">
+                        <div class="bentoImgWrap">
+                            <img
+                                src="img/ChatApp.png"
+                                class="bentoCardImg"
+                                alt="ChatApp screenshot"
+                            />
+                        </div>
+                        <div class="bentoCardContent">
+                            <h2 class="bentoCardName">ChatApp</h2>
+                            <p class="bentoCardDesc">
+                                Real-time web chat app built with vanilla
+                                JavaScript and Socket.IO supporting up to 200
+                                messages.
+                            </p>
+                            <span class="projectLang">
+                                SOCKET IO • JAVASCRIPT
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
         <footer class="footer">
-            <div class="footerActions">
-                <a
-                    href="/"
-                    title="Home"
-                    class="footerBtn"
-                    aria-label="home button"
-                    ><i class="fa-solid fa-house"></i>
-                </a>
+            <a href="/" class="footerHome" aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <nav class="footerNav">
                 <a
                     href="mailto:mathewluong7@gmail.com"
-                    title="Email"
-                    class="footerBtn"
-                    aria-label="email"
-                    ><i class="fa-solid fa-envelope fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
                 </a>
                 <a
                     href="https://www.linkedin.com/in/mathew-luong/"
                     target="_blank"
-                    title="LinkedIn"
-                    class="footerBtn"
-                    aria-label="linkedin"
-                    ><i class="fa-brands fa-linkedin fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
                 </a>
                 <a
                     href="https://github.com/mathew-luong"
                     target="_blank"
-                    aria-label="github"
-                    title="GitHub"
-                    class="footerBtn"
-                    ><i class="fa-brands fa-github fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
                 </a>
-            </div>
+            </nav>
         </footer>
         <script src="js/projects.js"></script>
     </body>

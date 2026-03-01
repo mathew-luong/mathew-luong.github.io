@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script>
+            if (localStorage.getItem("isLightmode") === "False") {
+                document.documentElement.classList.add("dark");
+            }
+        </script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,18 +85,19 @@
                     </h3>
                     <p class="projectDesc">
                         CVNNECT originated as a website designed to encapsulate
-                        a SaaS-based product model It was inspired from other
+                        a SaaS-based product model. It was inspired from other
                         websites such as Linktree, where registered users can
                         upload their information and generate a unique URL for
                         other people to access. The idea of a digital business
                         card came up as it provided an easy way to share your
                         information with others while networking. <br /><br />
 
-                        This project provided a valuable experience, being my
-                        first exposure to Firebase and a serverless
-                        architecture. Inititally I deployed CVNNECT with
-                        Firebase, which taught me how to setup my own
-                        application for deployment for different hosts.
+                        This project took me through the full development
+                        lifecycle. From designing the UI, to implementation, to
+                        deployment. I gained hands-on experience integrating
+                        multiple authentication providers and working with a
+                        NoSQL database through Firestore, learning how to
+                        structure and query data with an ORM.
                     </p>
                 </div>
                 <div>
@@ -109,38 +115,37 @@
             </section>
         </div>
         <footer class="footer">
-            <div class="footerActions">
-                <a
-                    href="/"
-                    title="Home"
-                    class="footerBtn"
-                    aria-label="home button"
-                    ><i class="fa-solid fa-house"></i>
-                </a>
+            <a href="../" class="footerHome" aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <nav class="footerNav">
                 <a
                     href="mailto:mathewluong7@gmail.com"
-                    title="Email"
-                    class="footerBtn"
-                    aria-label="email"
-                    ><i class="fa-solid fa-envelope fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
                 </a>
                 <a
                     href="https://www.linkedin.com/in/mathew-luong/"
                     target="_blank"
-                    title="LinkedIn"
-                    class="footerBtn"
-                    aria-label="linkedin"
-                    ><i class="fa-brands fa-linkedin fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
                 </a>
                 <a
                     href="https://github.com/mathew-luong"
                     target="_blank"
-                    aria-label="github"
-                    title="GitHub"
-                    class="footerBtn"
-                    ><i class="fa-brands fa-github fa-lg"></i>
+                    class="footerNavBtn"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
                 </a>
-            </div>
+            </nav>
         </footer>
         <script src="../js/projects.js"></script>
     </body>
