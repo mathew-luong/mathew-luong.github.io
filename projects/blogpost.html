@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script>if(localStorage.getItem('isLightmode')==='False'){document.documentElement.classList.add('dark');}</script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="../css/projects.css"
+        />
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+
+        <!-- GoogleFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- FontAwesome Icons -->
+        <script
+            src="https://kit.fontawesome.com/8468688554.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>BlogPost - Mathew Luong</title>
+    </head>
+    <body>
+        <div class="mainPage">
+            <section id="blogpost" class="projectSection">
+                <a href="../projects.html" class="backLink">
+                    <i class="fa-solid fa-arrow-left-long"></i
+                    ><span>All Projects</span>
+                </a>
+                <h1 class="projectHeader">BlogPost</h1>
+                <div class="projectLinks">
+                    <a
+                        href="https://github.com/mathew-luong/blog-app"
+                        class="btn"
+                        target="_blank"
+                        title="GitHub"
+                        >GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://youtu.be/BZoC5-w3mZc"
+                        target="__blank"
+                        aria-label="youtube"
+                        title="YouTube"
+                        class="btn"
+                        >YouTube<i class="fa-brands fa-youtube"></i
+                    ></a>
+                </div>
+                <div>
+                    <h3 class="techHeader">
+                        <span class="number">01.</span>Description
+                    </h3>
+                    <p class="projectDesc">
+                        Inspired as a Reddit redesign, BlogPost allows users to
+                        signup and create posts consisting of text or pictures.
+                        The main landing page beautifully displays each post
+                        organized by date posted. Users can like posts and view
+                        each post to see the full details such as comments made
+                        by other users.
+                    </p>
+                </div>
+
+                <div class="projectMotivation">
+                    <h3 class="techHeader">
+                        <span class="number">02.</span>Motivation & Outcomes
+                    </h3>
+                    <p class="projectDesc">
+                        BlogPost originally began as a Reddit.com clone however
+                        I wanted to challenge myself and redesign the website to
+                        appear more modern and sleek.
+                        <br />
+                        <br />
+                        This project was one of my first full stack applications
+                        where I developed both the backend and frontend
+                        individually. I learned how to develop a REST API in
+                        combination with a NoSQL database in MongoDB and
+                        integrate it into my frontend. This project also allowed
+                        me to develop a full stack application on the MERN tech
+                        stack.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="techHeader">
+                        <span class="number">03.</span>Tech Stack
+                    </h2>
+                    <div class="techStackContainer">
+                        <span class="techBox">MongoDB</span>
+                        <span class="techBox">Express.js</span>
+                        <span class="techBox">React</span>
+                        <span class="techBox">Node.js</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <a href="../" class="footerHome" aria-label="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <nav class="footerNav">
+                <a
+                    href="mailto:mathewluong7@gmail.com"
+                    class="footerNavBtn"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/mathew-luong/"
+                    target="_blank"
+                    class="footerNavBtn"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a
+                    href="https://github.com/mathew-luong"
+                    target="_blank"
+                    class="footerNavBtn"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </nav>
+        </footer>
+        <script src="../js/projects.js"></script>
+    </body>
+</html>
